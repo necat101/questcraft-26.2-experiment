@@ -12,7 +12,8 @@ QuestCraft, utilizing Vivecraft and Pojlib, is a standalone port of Minecraft: J
 - **Pico Neo 3, 4, 4u Support along with other headsets!**
 - **Full Multiplayer!**                                                                    
 - **Immersive Controls through Vivecraft!**                                                                                                   
-- **Supports 1.19.2 + 4, 1.20.1, 4 + 6, 1.21.1 + 4**                                                                                                                               
+- **Supports 1.19.2 & 4, 1.20.1, 4 & 6, 1.21.1 + 4 & 5**
+- **Fully standalone!**                                                                                                                        
 - **Includes a launcher that allows you to start QuestCraft, switch between versions, automatically update installed mods and other MC components in seconds, and use Mod Manager, a tool to download and install mods, modpacks and resourcepacks right from your Quest!**                                                                                                                                                                                
 
 # Installation Instructions
@@ -62,8 +63,8 @@ If you need help with these solutions, please go to the support channel of the Q
 - We do not exist on TikTok. No one from the dev team makes TikTok videos.
 - QuestCraft (QCXR) is developed and maintained by the QCXR team; we also contribute upstream to the open-source tools that we used to make this a reality; make sure to check out **[MCXR](https://github.com/mcxr-org/MCXR)**, the previous VR mod, now replaced with **[VivecraftMod](https://github.com/ferriarnus/VivecraftMod)**, **[PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher)** (for [Pojlib](https://github.com/QuestCraftPlusPlus/Pojlib/tree/QuestCraft)!)
 - All support questions should be asked inside the **[QuestCraft Discord](discord.gg/questcraft)** for the best experience.
-- **questcraft.net is not maintained or owned by anyone on the QuestCraft team**; they could put malware on it anytime. Please do not download anything from or visit questcraft.net. **Our new website is here at [QuestCraft](https://questcraft.org/)**. 
-- When installing mods that are not from Mod Manager on your Quest, you may face issues, ranging from unexpected behaviour to crashes! If you experience any, go to the **[Discord server](https://discord.gg/questcraft/), or if there isn't already an issue and is not about mod compatibility, [make a bug report](https://github.com/QuestCraftPlusPlus/QuestCraft/issues)**
+- **questcraft.net is not maintained or owned by anyone on the QuestCraft team**; they could put malware on it anytime. Please do not download anything from or visit questcraft.net. **Our website is here at [QuestCraft](https://questcraft.org/)**. 
+- When installing mods you may face issues, ranging from unexpected behaviour to crashes! If you experience any, go to the **[Discord server](https://discord.gg/questcraft/), or if there isn't already an issue and is not about mod compatibility, [make a bug report](https://github.com/QuestCraftPlusPlus/QuestCraft/issues)**
 
 # This project is open source...
 ...but you don't find source code in this repo. You can find the source code for each subproject in their respective repos:
