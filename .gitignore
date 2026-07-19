@@ -1,0 +1,7 @@
+.gradle/
+.gradle-home-pojlib/
+build/
+**/build/
+local.properties
+
+/.gradle-home*/
