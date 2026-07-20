@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "package": "org.vivecraft.mod_compat_vr.sodium.mixin",
+  "plugin": "org.vivecraft.MixinConfig",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ModelCuboidMixin",
+    "SodiumLeavesBlockMixin",
+    "SodiumWorldRendererVRMixin",
+    "caffeinemc.EntityRendererMixin",
+    "jellysquid.EntityRendererMixin"
+  ],
+  "minVersion": "0.8.4"
+}

@@ -1,0 +1,57 @@
+plugins {
+    id 'net.neoforged.moddev' version "${neoforge_moddev}"
+}
+
+neoForge {
+    version = neoforge_version
+
+    accessTransformers.from(project(':common').getTasksByName("convertAW", false).outputs.files.first)
+
+    // access transformer is not truly valid, because it doesn't make some constructors public
+    // validateAccessTransformers = true
+
+    runs {
+        configureEach {
+            systemProperty('neoforge.enabledGameTestNamespaces', mod_id)
+            ideName = "NeoForge ${it.name.capitalize()} (${project.path})" // Unify the run config names with fabric
+        }
+        client {
+            client()
+        }
+        server {
+            server()
+        }
+    }
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+    dependencies {
+        bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}") { transitive = false })
+        bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-linux") { transitive = false })
+        bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-linux-arm64") { transitive = false })
+        bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-macos") { transitive = false })
+        bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-windows") { transitive = false })
+        // theoretically these should be possible to bundle? but there is some module resolving issue
+        /*jarJar(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-linux") { transitive = false }) {
+            jarJar.configure(it) {
+                module {
+                    group = 'org.lwjgl'
+                    name = 'lwjgl-openvr-natives-linux'
+                }
+                version = rootProject.lwjgl_version
+            }
+        }*/
+
+        // for OSC tracker support
+        jarJar(implementation("com.illposed.osc:javaosc-core:0.9"))
+
+        // bHaptics Integration
+        jarJar(implementation("com.github.bhaptics:tact-java:0.1.4"))
+        jarJar(implementation("org.java-websocket:Java-WebSocket:1.5.1"))
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+

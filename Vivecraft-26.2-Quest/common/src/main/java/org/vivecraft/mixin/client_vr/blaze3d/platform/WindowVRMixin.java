@@ -1,0 +1,121 @@
+package org.vivecraft.mixin.client_vr.blaze3d.platform;
+
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import com.mojang.blaze3d.platform.Window;
+import com.mojang.blaze3d.platform.WindowEventHandler;
+import net.minecraft.client.Minecraft;
+import org.spongepowered.asm.mixin.Final;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import org.vivecraft.client_vr.ClientDataHolderVR;
+import org.vivecraft.client_vr.VRState;
+import org.vivecraft.client_vr.extensions.WindowExtension;
+import org.vivecraft.client_vr.gameplay.screenhandlers.GuiHandler;
+
+@Mixin(Window.class)
+public abstract class WindowVRMixin implements WindowExtension {
+
+    @Shadow
+    private int width;
+
+    @Shadow
+    private int height;
+
+    @Shadow
+    @Final
+    private WindowEventHandler eventHandler;
+
+    @Inject(method = "getWidth", at = @At("HEAD"), cancellable = true)
+    private void vivecraft$getVivecraftWidth(CallbackInfoReturnable<Integer> cir) {
+        if (VRState.VR_RUNNING) {
+            cir.setReturnValue(Minecraft.getInstance().gameRenderer.mainRenderTarget().width);
+        }
+    }
+
+    @Inject(method = "getHeight", at = @At("HEAD"), cancellable = true)
+    private void vivecraft$getVivecraftHeight(CallbackInfoReturnable<Integer> cir) {
+        if (VRState.VR_RUNNING) {
+            cir.setReturnValue(Minecraft.getInstance().gameRenderer.mainRenderTarget().height);
+        }
+    }
+
+    @Inject(method = "getScreenWidth", at = @At("HEAD"), cancellable = true)
+    private void vivecraft$getVivecraftScreenWidth(CallbackInfoReturnable<Integer> cir) {
+        if (VRState.VR_RUNNING) {
+            cir.setReturnValue(GuiHandler.GUI_WIDTH);
+        }
+    }
+
+    @Inject(method = "getScreenHeight", at = @At("HEAD"), cancellable = true)
+    private void vivecraft$getVivecraftScreenHeight(CallbackInfoReturnable<Integer> cir) {
+        if (VRState.VR_RUNNING) {
+            cir.setReturnValue(GuiHandler.GUI_HEIGHT);
+        }
+    }
+
+
+    @Inject(method = "getGuiScaledHeight", at = @At("HEAD"), cancellable = true)
+    private void vivecraft$getScaledHeight(CallbackInfoReturnable<Integer> cir) {
+        if (VRState.VR_RUNNING) {
+            cir.setReturnValue(
+                Minecraft.getInstance().gui.screen() == null &&
+                    ClientDataHolderVR.getInstance().vrSettings.hudMaxScale ?
+                    GuiHandler.SCALED_HEIGHT_MAX : GuiHandler.SCALED_HEIGHT);
+        }
+    }
+
+    @Inject(method = "getGuiScaledWidth", at = @At("HEAD"), cancellable = true)
+    private void vivecraft$getScaledWidth(CallbackInfoReturnable<Integer> cir) {
+        if (VRState.VR_RUNNING) {
+            cir.setReturnValue(
+                Minecraft.getInstance().gui.screen() == null &&
+                    ClientDataHolderVR.getInstance().vrSettings.hudMaxScale ?
+                    GuiHandler.SCALED_WIDTH_MAX : GuiHandler.SCALED_WIDTH);
+        }
+    }
+
+    @Inject(method = "getGuiScale", at = @At("HEAD"), cancellable = true)
+    private void vivecraft$getScaleFactor(CallbackInfoReturnable<Integer> cir) {
+        if (VRState.VR_RUNNING) {
+            cir.setReturnValue(
+                Minecraft.getInstance().gui.screen() == null &&
+                    ClientDataHolderVR.getInstance().vrSettings.hudMaxScale ?
+                    GuiHandler.GUI_SCALE_FACTOR_MAX : GuiHandler.GUI_SCALE_FACTOR);
+        }
+    }
+
+    @Inject(method = "onResize", at = @At("HEAD"))
+    private void vivecraft$resizeFrameBuffers(CallbackInfo ci) {
+        if (VRState.VR_INITIALIZED) {
+            ClientDataHolderVR.getInstance().vrRenderer.resizeFrameBuffers("Main Window Resized");
+        }
+    }
+
+    @ModifyReturnValue(method = "isFocused", at = @At(value = "RETURN"))
+    private boolean vivecraft$windowAlwaysActive(boolean isFocused) {
+        return isFocused || VRState.VR_RUNNING;
+    }
+
+    @Override
+    @Unique
+    public int vivecraft$getActualScreenHeight() {
+        return this.height;
+    }
+
+    @Override
+    @Unique
+    public int vivecraft$getActualScreenWidth() {
+        return this.width;
+    }
+
+    @Override
+    @Unique
+    public void vivecraft$resize() {
+        this.eventHandler.framebufferSizeChanged();
+    }
+}

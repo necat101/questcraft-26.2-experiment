@@ -1,0 +1,66 @@
+package org.vivecraft.client_vr.extensions;
+
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.phys.Vec3;
+import org.vivecraft.client_vr.VRData;
+
+public interface GameRendererExtension {
+
+    /**
+     * set the player position/rotation to the current VR pass location
+     */
+    void vivecraft$setupRVE();
+
+    /**
+     * set the player position/rotation to the current VR device pose
+     */
+    void vivecraft$setupRVEAtDevice(VRData.VRDevicePose eyePose);
+
+    /**
+     * cache the player position/rotation to be able to restore it later
+     */
+    void vivecraft$cacheRVEPos(Entity entity);
+
+    /**
+     * restore the cached player position/rotation
+     */
+    void vivecraft$restoreRVEPos(Entity entity);
+
+    /**
+     * @return the cached original player y position
+     */
+    double vivecraft$getRveY();
+
+    /**
+     * @return the cached original player position
+     */
+    Vec3 vivecraft$getRvePos();
+
+    /**
+     * @param partialTick partial Tick to interpolate the position
+     * @return the cached original player position
+     */
+    Vec3 vivecraft$getRvePos(float partialTick);
+
+    /**
+     * resets the projection matrix
+     *
+     * @param partialTick partial ticks to interpolate fov changes
+     */
+    void vivecraft$resetProjectionMatrix(float partialTick);
+
+    /**
+     * sets if the GamerRenderer should run through the screen rendering part of {@code GameRenderer.render()}
+     *
+     * @param shouldDrawScreen if screen rendering should happen
+     */
+    void vivecraft$setShouldDrawScreen(boolean shouldDrawScreen);
+
+    /**
+     * sets if the GamerRenderer should run through the gui rendering part of {@code GameRenderer.render()} <br>
+     * if {@code shouldDrawScreen} is false, this part isn't reached
+     *
+     * @param shouldDrawGui if gui rendering should happen
+     */
+    void vivecraft$setShouldDrawGui(boolean shouldDrawGui);
+}

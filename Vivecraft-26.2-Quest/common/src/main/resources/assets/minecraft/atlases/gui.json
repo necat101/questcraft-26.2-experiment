@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "vivecraft:gui/sprites/icon/search"
+    },
+    {
+      "type": "single",
+      "resource": "vivecraft:gui/sprites/icon/commands"
+    }
+  ]
+}

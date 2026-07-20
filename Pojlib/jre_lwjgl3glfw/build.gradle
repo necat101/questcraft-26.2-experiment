@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.lwjgl.glfw'
+
+def baseRuntime = file("base/lwjgl-fcl-vulkan-3.3.6.jar")
+def outputRuntime = file("../src/main/assets/lwjgl/lwjgl-glfw-classes.bin")
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    compileOnly files(baseRuntime)
+}
+
+tasks.register("mergeLwjglRuntime", Zip) {
+    dependsOn classes
+    archiveFileName.set("lwjgl-glfw-classes.bin")
+    destinationDirectory.set(outputRuntime.parentFile)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from(sourceSets.main.output) {
+        include "org/lwjgl/glfw/GLFW.class"
+        include "org/lwjgl/glfw/GLFW\u0024*.class"
+        include "org/lwjgl/glfw/GLFWWindowProperties.class"
+    }
+    from(zipTree(baseRuntime)) {
+        exclude "org/lwjgl/glfw/GLFW.class"
+        exclude "org/lwjgl/glfw/GLFW\u0024*.class"
+        exclude "org/lwjgl/glfw/GLFWWindowProperties.class"
+    }
+
+    doLast {
+        file("../src/main/assets/lwjgl/version").write(String.valueOf(new Date().getTime()))
+    }
+}

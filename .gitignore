@@ -13,3 +13,8 @@ local.properties
 /.tools/jdk*/
 /.tools/OpenJDK*.zip
 /.tools/commandlinetools-*.zip
+
+**/build/
+**/build.*/
+**/.cxx/
+**/.gradle/

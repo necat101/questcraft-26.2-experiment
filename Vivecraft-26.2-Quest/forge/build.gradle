@@ -1,0 +1,117 @@
+plugins {
+    id 'net.minecraftforge.gradle' version "${forge_gradle}"
+    id 'net.minecraftforge.jarjar' version '0.2.3'
+    id 'idea'
+}
+
+def mixins = [
+    "vivecraft.mixins.json",
+    "vivecraft.forge.mixins.json",
+
+    "vivecraft.accessories.mixins.json",
+    "vivecraft.alexmobs.mixins.json",
+    "vivecraft.bedrockify.mixins.json",
+    "vivecraft.blur.mixins.json",
+    "vivecraft.cataclysm.mixins.json",
+    "vivecraft.dynamicfps.mixins.json",
+    "vivecraft.elementa.mixins.json",
+    "vivecraft.emf.mixins.json",
+    "vivecraft.epicfight.mixins.json",
+    "vivecraft.iris.mixins.json",
+    "vivecraft.mca.mixins.json",
+    "vivecraft.optifine.mixins.json",
+    "vivecraft.rei.mixins.json",
+    "vivecraft.resolutioncontrol.mixins.json",
+    "vivecraft.sereneseasons.mixins.json",
+    "vivecraft.sodium.mixins.json",
+    "vivecraft.voxy.mixins.json",
+    "vivecraft.xaerosmimimap.mixins.json",
+    "vivecraft.xaerosworldmap.mixins.json"
+]
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+
+    accessTransformer = true
+
+    runs {
+        configureEach {
+            workingDir.convention layout.projectDirectory.dir('run')
+            systemProperty 'forge.logging.console.level', 'debug'
+            systemProperty 'eventbus.api.strictRuntimeChecks', 'true'
+            // Mixin requires either specifying the config via command line, or in the Manifest
+            args "--mixin.config=" + mixins.join(",")
+        }
+
+        register('client') {
+            systemProperty 'forge.enabledGameTestNamespaces', mod_id
+        }
+
+        register('server') {
+            systemProperty 'forge.enabledGameTestNamespaces', mod_id
+            args '--nogui'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    minecraft.mavenizer(it)
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
+}
+
+jarJar.register() {
+    archiveClassifier.set(project.name)
+    dependsOn(tasks.named("shadowJar"))
+
+    // Use shadowJar output instead
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from(zipTree(tasks.named("shadowJar").get().archiveFile))
+    destinationDirectory.set(rootProject.layout.buildDirectory.dir("libs"))
+}
+
+dependencies {
+    implementation minecraft.dependency("net.minecraftforge:forge:$forge_version")
+    annotationProcessor("net.minecraftforge:eventbus-validator:7.0.1")
+
+    bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}") { transitive = false })
+    bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-linux") { transitive = false })
+    bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-linux-arm64") { transitive = false })
+    bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-macos") { transitive = false })
+    bundle(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-windows") { transitive = false })
+    // theoretically these should be possible to bundle? but there is some module resolving issue
+    /*jarJar(implementation("org.lwjgl:lwjgl-openvr:${rootProject.lwjgl_version}:natives-linux") { transitive = false }) {
+        jarJar.configure(it) {
+            module {
+                group = 'org.lwjgl'
+                name = 'lwjgl-openvr-natives-linux'
+            }
+            version = rootProject.lwjgl_version
+        }
+    }*/
+
+    // for OSC tracker support
+    jarJar(implementation("com.illposed.osc:javaosc-core:0.9"))
+
+    // bHaptics Integration
+    jarJar(implementation("com.github.bhaptics:tact-java:0.1.4"))
+    jarJar(implementation("org.java-websocket:Java-WebSocket:1.5.1"))
+}
+
+shadowJar {
+    archiveClassifier.set(project.name + "-shadow")
+}
+
+jar {
+    manifest {
+        attributes["MixinConfigs"] = mixins.join(",")
+    }
+}
+
+sourceSets.each {
+    def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
+    it.output.resourcesDir = dir
+    it.java.destinationDirectory = dir
+}
+

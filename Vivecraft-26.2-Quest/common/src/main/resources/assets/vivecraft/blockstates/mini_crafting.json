@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "standalone": {
+      "model": "vivecraft:mini_crafting"
+    }
+  }
+}

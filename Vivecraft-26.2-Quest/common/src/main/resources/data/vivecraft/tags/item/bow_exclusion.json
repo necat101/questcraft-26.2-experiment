@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#pokecube:pokecubes",
+      "required": false
+    },
+
+    "#vivecraft:moditems/irons_spellbooks",
+    "#vivecraft:moditems/mna_spells",
+    "#vivecraft:moditems/balkons_weaponsmod/nonbows",
+    "#vivecraft:moditems/dewdrop_wateringcans"
+  ]
+}
