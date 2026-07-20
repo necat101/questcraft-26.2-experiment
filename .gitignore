@@ -5,3 +5,11 @@ build/
 local.properties
 
 /.gradle-home*/
+
+/.tools/jdk*/
+/.tools/OpenJDK*.zip
+/.tools/commandlinetools-*.zip
+
+/.tools/jdk*/
+/.tools/OpenJDK*.zip
+/.tools/commandlinetools-*.zip
