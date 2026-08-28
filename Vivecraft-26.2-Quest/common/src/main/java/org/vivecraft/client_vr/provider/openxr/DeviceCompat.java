@@ -376,7 +376,7 @@ public interface DeviceCompat {
 
         @Override
         public long[] getPreferredSwapchainFormats() {
-            return vulkanFormats();
+            return mobileVulkanFormats();
         }
 
         @Override
@@ -403,6 +403,25 @@ public interface DeviceCompat {
             VK10.VK_FORMAT_B8G8R8A8_SRGB,
             VK10.VK_FORMAT_R8G8B8A8_UNORM,
             VK10.VK_FORMAT_B8G8R8A8_UNORM
+        };
+    }
+
+    /**
+     * Android/Quest receives the Minecraft eye image from an RGBA8_UNORM render target and copies it into the
+     * OpenXR swapchain with a Vulkan blit. Selecting an sRGB destination for that blit makes Vulkan interpret the
+     * UNORM source values as linear and sRGB-encode them on write, even though Minecraft's final eye image is
+     * already display/gamma encoded. The extra encode lifts midtones and produces the characteristic washed-out
+     * Quest image.
+     *
+     * Prefer a matching UNORM swapchain on mobile so the compositor receives the same encoded values Minecraft
+     * produced. Keep sRGB formats as fallbacks for runtimes that do not expose UNORM swapchains.
+     */
+    static long[] mobileVulkanFormats() {
+        return new long[]{
+            VK10.VK_FORMAT_R8G8B8A8_UNORM,
+            VK10.VK_FORMAT_B8G8R8A8_UNORM,
+            VK10.VK_FORMAT_R8G8B8A8_SRGB,
+            VK10.VK_FORMAT_B8G8R8A8_SRGB
         };
     }
 }
