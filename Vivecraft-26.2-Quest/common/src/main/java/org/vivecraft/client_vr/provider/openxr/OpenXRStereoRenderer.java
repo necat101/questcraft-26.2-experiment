@@ -143,11 +143,20 @@ public class OpenXRStereoRenderer extends VRRenderer {
             PointerBuffer layers = null;
             if (this.openxr.shouldRender && this.imageAcquired[0] && this.imageAcquired[1]) {
                 for (int eye = 0; eye < 2; eye++) {
-                    GraphicsHelper.INSTANCE.copyToExternalImage(
-                        this.framebufferEye[eye].getColorTexture(),
-                        this.swapchainImages[eye][this.swapIndex[eye]],
-                        this.openxr.width,
-                        this.openxr.height);
+                    if (GraphicsHelper.INSTANCE instanceof VulkanHelper vulkanHelper) {
+                        vulkanHelper.copyToExternalImage(
+                            this.framebufferEye[eye].getColorTexture(),
+                            this.swapchainImages[eye][this.swapIndex[eye]],
+                            this.openxr.width,
+                            this.openxr.height,
+                            this.openxr.swapchainFormat);
+                    } else {
+                        GraphicsHelper.INSTANCE.copyToExternalImage(
+                            this.framebufferEye[eye].getColorTexture(),
+                            this.swapchainImages[eye][this.swapIndex[eye]],
+                            this.openxr.width,
+                            this.openxr.height);
+                    }
                 }
                 GraphicsHelper.INSTANCE.flush();
 

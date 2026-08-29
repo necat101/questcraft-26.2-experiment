@@ -53,6 +53,7 @@ public class MCOpenXR extends MCVR {
     public XrSpace xrAppSpace;
     public XrSpace xrViewSpace;
     public XrSwapchain[] swapchain;
+    public long swapchainFormat;
     public final XrEventDataBuffer eventDataBuffer = XrEventDataBuffer.calloc();
     public long time;
     private boolean tried;
@@ -880,6 +881,9 @@ public class MCOpenXR extends MCVR {
                 }
                 throw new RuntimeException("No compatible swapchain / framebuffer format available: " + formats);
             }
+
+            this.swapchainFormat = chosenFormat;
+            VRSettings.LOGGER.info("Vivecraft: selected OpenXR swapchain format {}", chosenFormat);
 
             this.swapchain = new XrSwapchain[2];
             // Make swapchain
