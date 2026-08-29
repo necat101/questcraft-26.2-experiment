@@ -33,6 +33,10 @@ public interface GraphicsHelper {
      */
     void copyToExternalImage(GpuTexture texture, long image, int width, int height);
 
+    default void copyToExternalImage(GpuTexture texture, long image, int width, int height, long externalFormat) {
+        copyToExternalImage(texture, image, width, height);
+    }
+
     /**
      * Generates mipmaps for the given GpuTexture
      *

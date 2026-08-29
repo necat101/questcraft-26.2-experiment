@@ -1,0 +1,1395 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User" at "2026-08-29T06:52:53.4123799Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 14096, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              3c0b9ee505bd4e099e036570d8384d7b
+  Correlation Id:          d0efeefb5687342237553c314bae2aae
+  External correlation Id: 2999238776364685533
+  Machine Id:              Jq9BtygUimSA+fW3p/p42m4cWug=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-User" (connect: 0.00s, validation: 0.01s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User-notifications" at "2026-08-29T06:52:53.47851Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '2022.3/respin/2022.3.62f2-4af31df585-v2' branch; Version is '2022.3.62f3 (96770f904ca7) revision 9860879'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Enterprise' Language: 'en' Physical Memory: 10961 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "2474517393173-UnityPersXXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper
+-executeMethod
+QuestCraftCliBuild.BuildAndroid
+-outputPath
+C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Builds\QuestCraft-26.2-gamma-vulkan-reference-fix.apk
+-logFile
+C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\unity-apk-build-gamma-vulkan-reference-fix.log
+Successfully changed project path to: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper
+C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16036]  Target information:
+
+Player connection [16036]  * "[IP] 192.168.56.1 [Port] 55504 [Flags] 2 [Guid] 694308911 [EditorId] 694308911 [Version] 1048832 [Id] WindowsEditor(7,netcats-vibrator) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16036]  * "[IP] 10.0.0.227 [Port] 55504 [Flags] 2 [Guid] 694308911 [EditorId] 694308911 [Version] 1048832 [Id] WindowsEditor(7,netcats-vibrator) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16036] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16036] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[Package Manager] UpmClient::Connect -- Connected to IPC stream "Upm-17172" after 0.5 seconds.
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 61 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.7.1 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.collab-proxy@2.7.1)
+    com.unity.ide.rider@3.0.36 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.ide.rider@3.0.36)
+    com.unity.ide.visualstudio@2.0.22 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.ide.visualstudio@2.0.22)
+    com.unity.test-framework@1.3.9 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.test-framework@1.3.9)
+    com.unity.textmeshpro@3.0.9 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.textmeshpro@3.0.9)
+    com.unity.timeline@1.8.6 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.timeline@1.8.6)
+    com.unity.toolchain.win-x86_64-linux-x86_64@2.0.10 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.toolchain.win-x86_64-linux-x86_64@2.0.10)
+    com.unity.visualscripting@1.9.4 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.visualscripting@1.9.4)
+    com.unity.xr.core-utils@2.5.2 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.core-utils@2.5.2)
+    com.unity.xr.interaction.toolkit@3.0.5 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.interaction.toolkit@3.0.5)
+    com.unity.xr.management@4.5.1 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.management@4.5.1)
+    com.unity.xr.openxr@1.14.3 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.openxr@1.14.3)
+    com.unity.inputsystem@1.14.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.inputsystem@1.14.0)
+    com.unity.xr.legacyinputhelpers@2.1.12 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.12)
+    com.unity.mathematics@1.2.6 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.mathematics@1.2.6)
+    com.unity.sysroot@2.0.10 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.sysroot@2.0.10)
+    com.unity.sysroot.linux-x86_64@2.0.9 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.sysroot.linux-x86_64@2.0.9)
+    com.unity.ext.nunit@2.0.3 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.ext.nunit@2.0.3)
+    com.unity.ide.vscode@1.2.5 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.ide.vscode@1.2.5)
+    com.unity.editorcoroutines@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.editorcoroutines@1.0.0)
+    com.unity.performance.profile-analyzer@1.2.3 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.3)
+    com.unity.testtools.codecoverage@1.2.6 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.testtools.codecoverage@1.2.6)
+    com.unity.settings-manager@2.1.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.settings-manager@2.1.0)
+  Packages from [https://unitynuget-registry.openupm.com]:
+    org.nuget.system.runtime.compilerservices.unsafe@6.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\org.nuget.system.runtime.compilerservices.unsafe@6.0.0)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.2d.sprite@1.0.0)
+    com.unity.feature.development@1.0.1 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.feature.development@1.0.1)
+    com.unity.ugui@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.ugui@1.0.0)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.ai@1.0.0)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.androidjni@1.0.0)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.animation@1.0.0)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.assetbundle@1.0.0)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.audio@1.0.0)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.cloth@1.0.0)
+    com.unity.modules.director@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.director@1.0.0)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.imageconversion@1.0.0)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.imgui@1.0.0)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.particlesystem@1.0.0)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.physics@1.0.0)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.physics2d@1.0.0)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.screencapture@1.0.0)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.terrain@1.0.0)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.tilemap@1.0.0)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.ui@1.0.0)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.uielements@1.0.0)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.umbra@1.0.0)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.vehicles@1.0.0)
+    com.unity.modules.video@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.video@1.0.0)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.vr@1.0.0)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.wind@1.0.0)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.xr@1.0.0)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.modules.subsystems@1.0.0)
+  Local packages:
+    com.netpyoung.webp@file:C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Packages\LocalPackages\unity.webp (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Packages\LocalPackages\unity.webp)
+    com.unity.xr.openxr.picoxr@file:C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Packages\LocalPackages\PICO Unity OpenXR Integration SDK-1.3.0 (location: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Packages\LocalPackages\PICO Unity OpenXR Integration SDK-1.3.0)
+[Subsystems] Looking for new subsystems at path C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.openxr@1.14.3
+[Subsystems] Novel subsystem found at Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper/Assets
+[Subsystems] Discovering subsystems at path C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.openxr@1.14.3
+[Subsystems] No descriptors matched for  examples in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] 1 'inputs' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json
+[Subsystems] 1 'displays' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json
+[Subsystems] No descriptors matched for  meshings in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] Discovering subsystems at path C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Packages\LocalPackages\PICO Unity OpenXR Integration SDK-1.3.0
+[Subsystems] No descriptors matched for  examples in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] No descriptors matched for  inputs in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] No descriptors matched for  displays in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] 1 'meshings' descriptors matched in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.14 seconds
+[Licensing::Client] Successfully resolved entitlement details
+Refreshing native plugins compatible for Editor in 160.57 ms, found 19 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f3 (96770f904ca7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper/Assets
+[Subsystems] Discovering subsystems at path C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\PackageCache\com.unity.xr.openxr@1.14.3
+[Subsystems] No descriptors matched for  examples in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] 1 'inputs' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json
+[Subsystems] 1 'displays' descriptors matched in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json
+[Subsystems] No descriptors matched for  meshings in Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] Discovering subsystems at path C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Packages\LocalPackages\PICO Unity OpenXR Integration SDK-1.3.0
+[Subsystems] No descriptors matched for  examples in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] No descriptors matched for  inputs in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] No descriptors matched for  displays in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json.
+[Subsystems] 1 'meshings' descriptors matched in Packages/LocalPackages/PICO Unity OpenXR Integration SDK-1.3.0/Runtime/UnitySubsystemsManifest.json
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0; jobified=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+[Licensing::Client] Successfully resolved entitlement details
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.059406 seconds.
+- Loaded All Assemblies, in  0.518 seconds
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
+C:\Users\User\AppData\Local\Android\Sdk\platform-tools\adb.exe
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs:374)
+UnityEditor.Android.TargetScanWorker:ScanSync () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/TargetScanWorker.cs:164)
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[]) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:102)
+UnityEditor.Android.TargetExtension:OnLoad () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:63)
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
+
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs Line: 374)
+
+Android Extension - Scanning For ADB Devices 2425 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.799 seconds
+Domain Reload Profiling: 3315ms
+	BeginReloadAssembly (177ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (128ms)
+	LoadAllAssembliesAndSetupDomain (158ms)
+		LoadAssemblies (177ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (151ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (134ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2801ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2758ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2563ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (122ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 80.5193ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s213ms
+*** Tundra build success (0.17 seconds), 0 items updated, 720 evaluated
+AssetDatabase: script compilation time: 1.095195s
+Begin MonoManager ReloadAssembly
+Total cache size 147267829
+Total cache size after purge 147267829
+- Loaded All Assemblies, in  0.998 seconds
+Refreshing native plugins compatible for Editor in 39.03 ms, found 19 plugins.
+Refreshing native plugins compatible for Editor in 37.51 ms, found 19 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Start importing Assets/Plugins/Android/Pojlib-release.aar using Guid(55d89ee4baf555941bcffc8ec872188a) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'dbe9fbf8eea3d1efe1eacf50b9917c0a') in 0.062008 seconds
+Refreshing native plugins compatible for Editor in 37.21 ms, found 19 plugins.
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+DisplayProgressbar: Restoring NuGet Packages
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.737 seconds
+Domain Reload Profiling: 1727ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (756ms)
+		LoadAssemblies (605ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (235ms)
+			TypeCache.Refresh (200ms)
+				TypeCache.ScanAssembly (176ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (737ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (589ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (404ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 40.48 ms, found 19 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a7a1b679ba936284e91c59a6cb6d4fae): Total: 8.113 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=40 ms, native=4675 ms
+		Asset DB Callback time: managed=208 ms, native=63 ms
+		Scripting: domain reloads=1, domain reload time=1968 ms, compile time=1097 ms, other=58 ms
+		Project Asset Count: scripts=6270, non-scripts=1668
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeBeforeRefreshCallbacks: 1.968ms
+	ApplyChangesToAssetFolders: 0.316ms
+	Scan: 100.489ms
+	OnSourceAssetsModified: 2.677ms
+	GetAllGuidsForCategorization: 1.356ms
+	CategorizeAssets: 252.700ms
+	ImportOutOfDateAssets: 1003.968ms (-196.441ms without children)
+		ImportManagerImport: 67.123ms (3.670ms without children)
+			ImportInProcess: 63.183ms
+			UpdateCategorizedAssets: 0.271ms
+		CompileScripts: 1097.231ms
+		ReloadNativeAssets: 0.018ms
+		UnloadImportedAssets: 30.973ms
+		ReloadImportedAssets: 0.001ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 2.739ms
+		InitializingProgressBar: 0.333ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 1.990ms
+	PostProcessAllAssets: 224.295ms
+	Hotreload: 43.024ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 0.547ms
+	PersistCurrentRevisions: 0.364ms
+	UnloadStreamsEnd: 0.049ms
+	GenerateScriptTypeHashes: 3.130ms
+	Untracked: 6481.278ms
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 7.409ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-QuestCraft
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ProgressiveSceneManager::Cancel()
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 203 unused Assets / (0.5 MB). Loaded Objects now: 5518.
+Memory consumption went from 168.7 MB to 168.1 MB.
+Total: 6.928400 ms (FindLiveObjects: 0.440900 ms CreateObjectMapping: 0.218400 ms MarkObjects: 5.822000 ms  DeleteObjects: 0.446000 ms)
+
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e1a27c85ee3f9179a1e3b6d809872e46') in 0.003854 seconds
+Start importing Assets/XR/Settings/OpenXR Package Settings.asset using Guid(7b5da002d83fb8f42ac49c354e6f6d31) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '565b4b24089409ba296007943a2c9e48') in 0.003791 seconds
+Refreshing native plugins compatible for Editor in 42.16 ms, found 19 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ac07189f0d92fd14b9dd8ccf69a53a89): Total: 0.082 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+DisplayProgressbar: Checking prerequisites
+Android PostProcess task "Checking prerequisites" took 20.7543 ms
+DisplayProgressbar: Detect Java Development Kit (JDK)
+Android PostProcess task "Detect Java Development Kit (JDK)" took 121.8201 ms
+DisplayProgressbar: Detecting Android SDK
+AndroidSDKTools:
+
+	root          : C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\PlaybackEngines\AndroidPlayer\SDK
+	cmdline-tools : C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\cmdline-tools\6.0
+	platform-tools: C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools
+	build-tools   : C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\build-tools\34.0.0
+
+	adb           : C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe
+
+Android PostProcess task "Detecting Android SDK" took 2853.2541 ms
+DisplayProgressbar: Detect Android NDK
+Android PostProcess task "Detect Android NDK" took 6.594 ms
+Android PostProcess task "Trying to find a suitable Android device" took 0.4156 ms
+DisplayProgressbar: Checking Graphics API compatibility
+Android PostProcess task "Checking Graphics API compatibility" took 1.5109 ms
+DisplayProgressbar: Check resources
+Android PostProcess task "Check resources" took 0.3229 ms
+DisplayProgressbar: Check Android Player Settings
+Android PostProcess task "Check Android Player Settings" took 0.4762 ms
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 1.4839ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aESkipCompile.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s93ms
+*** Tundra build success (0.05 seconds), 0 items updated, 3 evaluated
+Asset Pipeline Refresh (id=80eefc8dca01f25419220c11bc8a2ff0): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[ScriptCompilation] Requested script compilation because: Recompiling scripts for player build.
+BuildPlayer: start building target 13
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.5318ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aP.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper
+Total cache size 147267829
+Total cache size after purge 147267829
+ExitCode: 0 Duration: 2s76ms
+[226/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityGifDecoder.pdb
+[229/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityGifDecoder.dll
+[230/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/unity.webp.dll
+[235/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.Management.dll
+[236/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb
+[237/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/unity.webp.pdb
+[238/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll
+[252/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll
+[255/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll
+[262/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.SpatialTracking.dll
+[265/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Timeline.pdb
+[271/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.Management.pdb
+[272/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.pdb
+[274/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll
+[275/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll
+[276/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.dll
+[278/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.PICOSupport.dll
+[279/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.MockRuntime.dll
+[280/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.Interaction.Toolkit.dll
+[281/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll
+[282/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll
+[283/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll
+[284/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.MetaQuestSupport.dll
+[285/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXRPico.dll
+[286/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.CoreUtils.dll
+[287/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/PICO.TobSupport.dll
+[288/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll
+[289/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.RuntimeDebugger.dll
+[290/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.RuntimeDebugger.pdb
+[291/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.dll
+[292/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.dll
+[293/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb
+[294/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+[295/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll
+[296/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.ForUI.dll
+[297/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/PICO.Platform.dll
+[298/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/ControllerSample.dll
+[299/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.pdb
+[300/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/PICO.TobSupport.pdb
+[301/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.pdb
+[302/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.pdb
+[303/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/ControllerSample.pdb
+[304/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.pdb
+[305/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.Interaction.Toolkit.pdb
+[306/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.pdb
+[307/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/PICO.Platform.pdb
+[308/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.pdb
+[309/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.ForUI.pdb
+[310/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.MetaQuestSupport.pdb
+[311/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.MockRuntime.pdb
+[312/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.PICOSupport.pdb
+[313/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.CoreUtils.pdb
+[314/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.SpatialTracking.pdb
+[315/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb
+[316/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXRPico.pdb
+[317/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb
+[318/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.pdb
+[319/322    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.pdb
+*** Tundra build success (2.04 seconds), 58 items updated, 322 evaluated
+Total cache size 147267829
+Total cache size after purge 147267829
+Not rebuilding Data files -- no changes
+Asset Pipeline Refresh (id=086943d4cf4bb264aafcab155ef5b165): Total: 0.067 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Warning! Using more than 1 pixel lights on a mobile device may decrease performance severely. You can change the mobile quality settings in 'Project Settings -> Quality Settings'.
+
+
+Mono dependencies included in the build
+Dependency assembly - System.ServiceModel.Security.dll
+Dependency assembly - System.IdentityModel.dll
+Dependency assembly - System.Threading.Thread.dll
+Dependency assembly - System.IO.Compression.dll
+Dependency assembly - System.Reflection.Context.dll
+Dependency assembly - Microsoft.Win32.Registry.dll
+Dependency assembly - System.Reflection.Extensions.dll
+Dependency assembly - System.Configuration.dll
+Dependency assembly - System.Security.SecureString.dll
+Dependency assembly - System.Runtime.Serialization.Json.dll
+Dependency assembly - System.Data.Entity.dll
+Dependency assembly - System.Web.RegularExpressions.dll
+Dependency assembly - System.Console.dll
+Dependency assembly - Newtonsoft.Json.dll
+Dependency assembly - System.IO.FileSystem.Watcher.dll
+Dependency assembly - System.Text.Encoding.CodePages.dll
+Dependency assembly - System.Diagnostics.Contracts.dll
+Dependency assembly - Unity.Timeline.dll
+Dependency assembly - System.Diagnostics.TextWriterTraceListener.dll
+Dependency assembly - System.IO.FileSystem.AccessControl.dll
+Dependency assembly - System.Net.NameResolution.dll
+Dependency assembly - System.DirectoryServices.Protocols.dll
+Dependency assembly - System.Linq.Expressions.dll
+Dependency assembly - System.Net.NetworkInformation.dll
+Dependency assembly - Microsoft.Win32.Primitives.dll
+Dependency assembly - System.IO.Pipes.dll
+Dependency assembly - System.Xml.ReaderWriter.dll
+Dependency assembly - System.Net.Cache.dll
+Dependency assembly - System.Runtime.Loader.dll
+Dependency assembly - System.Threading.Timer.dll
+Dependency assembly - System.Threading.Overlapped.dll
+Dependency assembly - PICO.TobSupport.dll
+Dependency assembly - System.Globalization.Calendars.dll
+Dependency assembly - System.Collections.Specialized.dll
+Dependency assembly - System.ServiceModel.NetTcp.dll
+Dependency assembly - System.Security.Cryptography.OpenSsl.dll
+Dependency assembly - Unity.XR.Interaction.Toolkit.dll
+Dependency assembly - Microsoft.CSharp.dll
+Dependency assembly - System.Configuration.Install.dll
+Dependency assembly - System.Net.WebSockets.Client.dll
+Dependency assembly - System.Dynamic.Runtime.dll
+Dependency assembly - System.Linq.Parallel.dll
+Dependency assembly - System.Memory.dll
+Dependency assembly - System.Web.Services.dll
+Dependency assembly - System.Linq.dll
+Dependency assembly - System.Security.Cryptography.Algorithms.dll
+Dependency assembly - Mono.Data.Tds.dll
+Dependency assembly - System.Threading.dll
+Dependency assembly - Mono.Data.Sqlite.dll
+Dependency assembly - System.Data.SqlClient.dll
+Dependency assembly - System.Drawing.Primitives.dll
+Dependency assembly - System.Net.dll
+Dependency assembly - System.Resources.ResourceManager.dll
+Dependency assembly - UnityEngine.UI.dll
+Dependency assembly - System.Reflection.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.dll
+Dependency assembly - System.IO.MemoryMappedFiles.dll
+Dependency assembly - System.ServiceModel.Web.dll
+Dependency assembly - System.Runtime.Numerics.dll
+Dependency assembly - System.ServiceProcess.dll
+Dependency assembly - System.Web.ApplicationServices.dll
+Dependency assembly - System.Net.Requests.dll
+Dependency assembly - PICO.Platform.dll
+Dependency assembly - System.Net.HttpListener.dll
+Dependency assembly - System.Runtime.Serialization.Xml.dll
+Dependency assembly - System.Net.Mail.dll
+Dependency assembly - Assembly-CSharp.dll
+Dependency assembly - System.DirectoryServices.dll
+Dependency assembly - unity.webp.dll
+Dependency assembly - System.AppContext.dll
+Dependency assembly - Unity.VisualScripting.State.dll
+Dependency assembly - System.Net.Http.WebRequest.dll
+Dependency assembly - System.Buffers.dll
+Dependency assembly - System.Resources.Reader.dll
+Dependency assembly - System.ComponentModel.Composition.dll
+Dependency assembly - System.Diagnostics.Tools.dll
+Dependency assembly - System.Core.dll
+Dependency assembly - System.Messaging.dll
+Dependency assembly - System.ServiceModel.Activation.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.Soap.dll
+Dependency assembly - System.Threading.AccessControl.dll
+Dependency assembly - System.Security.Cryptography.Csp.dll
+Dependency assembly - Unity.XR.OpenXR.dll
+Dependency assembly - System.Xml.XPath.XmlDocument.dll
+Dependency assembly - System.ComponentModel.DataAnnotations.dll
+Dependency assembly - System.Security.Cryptography.Cng.dll
+Dependency assembly - System.Reflection.Primitives.dll
+Dependency assembly - System.Collections.NonGeneric.dll
+Dependency assembly - Accessibility.dll
+Dependency assembly - System.Net.Ping.dll
+Dependency assembly - System.Web.Extensions.dll
+Dependency assembly - System.Security.Cryptography.Encryption.dll
+Dependency assembly - Unity.TextMeshPro.dll
+Dependency assembly - System.ServiceModel.Duplex.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDsa.dll
+Dependency assembly - System.Xaml.dll
+Dependency assembly - System.Data.Services.Client.dll
+Dependency assembly - System.Linq.Queryable.dll
+Dependency assembly - System.ServiceModel.Routing.dll
+Dependency assembly - System.IO.UnmanagedMemoryStream.dll
+Dependency assembly - System.Text.Encoding.Extensions.dll
+Dependency assembly - System.Security.AccessControl.dll
+Dependency assembly - System.Windows.Forms.DataVisualization.dll
+Dependency assembly - System.Net.WebHeaderCollection.dll
+Dependency assembly - ControllerSample.dll
+Dependency assembly - System.Security.Principal.dll
+Dependency assembly - System.Numerics.dll
+Dependency assembly - System.Reflection.Emit.ILGeneration.dll
+Dependency assembly - Unity.InputSystem.ForUI.dll
+Dependency assembly - System.Net.WebSockets.dll
+Dependency assembly - Unity.XR.OpenXR.Features.OculusQuestSupport.dll
+Dependency assembly - System.Runtime.Extensions.dll
+Dependency assembly - System.Runtime.CompilerServices.VisualC.dll
+Dependency assembly - System.Security.Cryptography.Encoding.dll
+Dependency assembly - System.ServiceModel.Discovery.dll
+Dependency assembly - System.Management.dll
+Dependency assembly - System.Transactions.dll
+Dependency assembly - System.Security.Cryptography.ProtectedData.dll
+Dependency assembly - System.Resources.Writer.dll
+Dependency assembly - System.Xml.XDocument.dll
+Dependency assembly - Microsoft.Win32.Registry.AccessControl.dll
+Dependency assembly - System.Drawing.dll
+Dependency assembly - Unity.VisualScripting.Flow.dll
+Dependency assembly - System.ServiceModel.Primitives.dll
+Dependency assembly - System.ValueTuple.dll
+Dependency assembly - Unity.XR.OpenXR.Features.RuntimeDebugger.dll
+Dependency assembly - System.Runtime.Serialization.dll
+Dependency assembly - System.Data.DataSetExtensions.dll
+Dependency assembly - System.Runtime.Serialization.Primitives.dll
+Dependency assembly - System.Security.Cryptography.Hashing.dll
+Dependency assembly - System.EnterpriseServices.dll
+Dependency assembly - System.Runtime.InteropServices.WindowsRuntime.dll
+Dependency assembly - mscorlib.dll
+Dependency assembly - System.Resources.ReaderWriter.dll
+Dependency assembly - System.Diagnostics.TraceSource.dll
+Dependency assembly - System.Runtime.Remoting.dll
+Dependency assembly - System.Data.dll
+Dependency assembly - System.Net.Sockets.dll
+Dependency assembly - System.ComponentModel.dll
+Dependency assembly - System.Data.Services.dll
+Dependency assembly - Unity.XR.CoreUtils.dll
+Dependency assembly - System.Collections.Concurrent.dll
+Dependency assembly - System.Diagnostics.Process.dll
+Dependency assembly - UnityEngine.SpatialTracking.dll
+Dependency assembly - Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll
+Dependency assembly - System.Web.DynamicData.dll
+Dependency assembly - System.Xml.dll
+Dependency assembly - System.Runtime.InteropServices.RuntimeInformation.dll
+Dependency assembly - Unity.XR.Management.dll
+Dependency assembly - System.Threading.Tasks.dll
+Dependency assembly - System.IO.FileSystem.Primitives.dll
+Dependency assembly - Unity.VisualScripting.Core.dll
+Dependency assembly - System.Runtime.Handles.dll
+Dependency assembly - System.Security.Cryptography.X509Certificates.dll
+Dependency assembly - netstandard.dll
+Dependency assembly - System.IO.Compression.FileSystem.dll
+Dependency assembly - Unity.XR.OpenXR.Features.MockRuntime.dll
+Dependency assembly - System.Security.Principal.Windows.dll
+Dependency assembly - UnityGifDecoder.dll
+Dependency assembly - System.Reflection.DispatchProxy.dll
+Dependency assembly - System.Xml.Xsl.Primitives.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDiffieHellman.dll
+Dependency assembly - System.Text.Encoding.dll
+Dependency assembly - System.Net.Primitives.dll
+Dependency assembly - System.ServiceModel.Internals.dll
+Dependency assembly - System.Diagnostics.StackTrace.dll
+Dependency assembly - System.Web.Extensions.Design.dll
+Dependency assembly - System.IO.IsolatedStorage.dll
+Dependency assembly - System.Diagnostics.TraceEvent.dll
+Dependency assembly - System.Threading.Tasks.Extensions.dll
+Dependency assembly - System.Xml.XPath.dll
+Dependency assembly - System.IO.dll
+Dependency assembly - System.Security.Cryptography.Encryption.Aes.dll
+Dependency assembly - System.Diagnostics.Debug.dll
+Dependency assembly - System.Net.Utilities.dll
+Dependency assembly - System.Runtime.dll
+Dependency assembly - System.ObjectModel.dll
+Dependency assembly - System.Security.Cryptography.RandomNumberGenerator.dll
+Dependency assembly - System.Data.Linq.dll
+Dependency assembly - System.Runtime.Caching.dll
+Dependency assembly - System.Diagnostics.Tracing.dll
+Dependency assembly - System.Runtime.InteropServices.dll
+Dependency assembly - System.Security.Claims.dll
+Dependency assembly - System.Design.dll
+Dependency assembly - System.Runtime.DurableInstancing.dll
+Dependency assembly - System.Numerics.Vectors.dll
+Dependency assembly - System.Security.dll
+Dependency assembly - System.ComponentModel.TypeConverter.dll
+Dependency assembly - Unity.XR.OpenXR.Features.MetaQuestSupport.dll
+Dependency assembly - System.Security.Cryptography.Primitives.dll
+Dependency assembly - System.Net.Http.dll
+Dependency assembly - System.ServiceModel.Http.dll
+Dependency assembly - System.Windows.dll
+Dependency assembly - System.ComponentModel.Primitives.dll
+Dependency assembly - Unity.Mathematics.dll
+Dependency assembly - System.Threading.Tasks.Parallel.dll
+Dependency assembly - System.IdentityModel.Selectors.dll
+Dependency assembly - System.Runtime.CompilerServices.Unsafe.dll
+Dependency assembly - UnityEngine.XR.LegacyInputHelpers.dll
+Dependency assembly - System.Xml.XmlDocument.dll
+Dependency assembly - Unity.XR.OpenXR.Features.ConformanceAutomation.dll
+Dependency assembly - Unity.XR.OpenXR.Features.PICOSupport.dll
+Dependency assembly - Unity.XR.OpenXRPico.dll
+Dependency assembly - System.Security.Cryptography.Pkcs.dll
+Dependency assembly - System.IO.FileSystem.DriveInfo.dll
+Dependency assembly - System.Diagnostics.FileVersionInfo.dll
+Dependency assembly - System.ServiceModel.dll
+Dependency assembly - System.Reflection.Emit.dll
+Dependency assembly - System.Drawing.Design.dll
+Dependency assembly - System.Windows.Forms.dll
+Dependency assembly - System.Reflection.Emit.Lightweight.dll
+Dependency assembly - System.Xml.Linq.dll
+Dependency assembly - System.Security.Cryptography.DeriveBytes.dll
+Dependency assembly - System.Text.RegularExpressions.dll
+Dependency assembly - System.Web.dll
+Dependency assembly - System.IO.Compression.ZipFile.dll
+Dependency assembly - System.Globalization.Extensions.dll
+Dependency assembly - System.dll
+Dependency assembly - System.Xml.Serialization.dll
+Dependency assembly - System.Globalization.dll
+Dependency assembly - System.ComponentModel.Annotations.dll
+Dependency assembly - System.Xml.XPath.XDocument.dll
+Dependency assembly - System.Net.Security.dll
+Dependency assembly - System.Net.ServicePoint.dll
+Dependency assembly - System.Threading.ThreadPool.dll
+Dependency assembly - System.IO.FileSystem.dll
+Dependency assembly - System.ServiceProcess.ServiceController.dll
+Dependency assembly - System.Reflection.TypeExtensions.dll
+Dependency assembly - System.Json.dll
+Dependency assembly - Mono.Security.dll
+Dependency assembly - System.Data.Common.dll
+Dependency assembly - System.Security.Cryptography.RSA.dll
+Dependency assembly - System.Collections.dll
+Dependency assembly - Unity.VisualScripting.Antlr3.Runtime.dll
+Dependency assembly - System.Xml.XmlSerializer.dll
+Dependency assembly - Unity.InputSystem.dll
+Dependency assembly - System.Data.OracleClient.dll
+Dependency assembly - System.Net.AuthenticationManager.dll
+Dependency assembly - System.ComponentModel.EventBasedAsync.dll
+Dependency assembly - System.Security.Cryptography.Hashing.Algorithms.dll
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+Compressed texture export202201252311597020 is used as icon. This might compromise visual quality of the final image. Uncompressed format might be considered as better import option.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+[Assets/Editor/QuestCraftCliBuild.cs line 86]
+
+DisplayProgressbar: Initializing
+Android PostProcess task "Initializing" took 0.6824 ms
+DisplayProgressbar: Check gradle project collisions
+Android PostProcess task "Check gradle project collisions" took 0.3376 ms
+DisplayProgressbar: Preparing banner
+Android PostProcess task "Preparing banner" took 0.4648 ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.7728ms
+Plugin 'Packages/com.netpyoung.webp/Plugins/Android/libs/arm64-v8a/libwebpmux.so' is not 16KB-aligned. This may cause issues on ARM64 devices running Android 15+.
+More info: <a href="https://developer.android.com/guide/practices/page-sizes">https://developer.android.com/guide/practices/page-sizes</a>.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Android.AndroidBuildPostprocessor:CollectPlugin (string,Unity.Android.Types.AndroidArchitecture,System.Collections.Generic.Dictionary`2<string, UnityEditor.Android.AndroidBuildPostprocessor/AndroidSourcePlugin>,bool) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:407)
+UnityEditor.Android.AndroidBuildPostprocessor:PluginsDataFor (UnityEditor.Modules.BuildPostProcessArgs) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:470)
+UnityEditor.Modules.BeeBuildPostprocessor/<GetDataForBuildProgramFor>d__49:MoveNext ()
+UnityEditor.Android.AndroidBuildPostprocessor/<GetDataForBuildProgramFor>d__29:MoveNext () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:730)
+System.Linq.Enumerable/WhereEnumerableIterator`1<object>:MoveNext ()
+Bee.BeeDriver.BeeDriver:WriteDataForBuildProgram (Bee.BeeDriver.InternalState,System.Threading.Tasks.TaskCompletionSource`1<int>)
+Bee.BeeDriver.BeeDriver/<>c__DisplayClass0_0:<BuildAsync>g__WriteData|0 ()
+Bee.BeeDriver.BeeDriver:BuildAsync (Bee.BeeDriver.BuildRequest,System.Threading.CancellationToken)
+UnityEditor.Modules.BeeBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs)
+UnityEditor.Modules.DefaultBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&)
+UnityEditor.Android.AndroidBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:228)
+UnityEditor.PostprocessBuildPlayer:Postprocess (UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,string,string,string,int,int,UnityEditor.BuildOptions,UnityEditor.RuntimeClassRegistry,UnityEditor.Build.Reporting.BuildReport)
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs Line: 407)
+
+Plugin 'Packages/com.netpyoung.webp/Plugins/Android/libs/arm64-v8a/libwebpdemux.so' is not 16KB-aligned. This may cause issues on ARM64 devices running Android 15+.
+More info: <a href="https://developer.android.com/guide/practices/page-sizes">https://developer.android.com/guide/practices/page-sizes</a>.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Android.AndroidBuildPostprocessor:CollectPlugin (string,Unity.Android.Types.AndroidArchitecture,System.Collections.Generic.Dictionary`2<string, UnityEditor.Android.AndroidBuildPostprocessor/AndroidSourcePlugin>,bool) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:407)
+UnityEditor.Android.AndroidBuildPostprocessor:PluginsDataFor (UnityEditor.Modules.BuildPostProcessArgs) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:470)
+UnityEditor.Modules.BeeBuildPostprocessor/<GetDataForBuildProgramFor>d__49:MoveNext ()
+UnityEditor.Android.AndroidBuildPostprocessor/<GetDataForBuildProgramFor>d__29:MoveNext () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:730)
+System.Linq.Enumerable/WhereEnumerableIterator`1<object>:MoveNext ()
+Bee.BeeDriver.BeeDriver:WriteDataForBuildProgram (Bee.BeeDriver.InternalState,System.Threading.Tasks.TaskCompletionSource`1<int>)
+Bee.BeeDriver.BeeDriver/<>c__DisplayClass0_0:<BuildAsync>g__WriteData|0 ()
+Bee.BeeDriver.BeeDriver:BuildAsync (Bee.BeeDriver.BuildRequest,System.Threading.CancellationToken)
+UnityEditor.Modules.BeeBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs)
+UnityEditor.Modules.DefaultBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&)
+UnityEditor.Android.AndroidBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:228)
+UnityEditor.PostprocessBuildPlayer:Postprocess (UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,string,string,string,int,int,UnityEditor.BuildOptions,UnityEditor.RuntimeClassRegistry,UnityEditor.Build.Reporting.BuildReport)
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs Line: 407)
+
+Plugin 'Packages/com.unity.xr.openxr/Runtime/android/arm64/libUnityOpenXR.so' is not 16KB-aligned. This may cause issues on ARM64 devices running Android 15+.
+More info: <a href="https://developer.android.com/guide/practices/page-sizes">https://developer.android.com/guide/practices/page-sizes</a>.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Android.AndroidBuildPostprocessor:CollectPlugin (string,Unity.Android.Types.AndroidArchitecture,System.Collections.Generic.Dictionary`2<string, UnityEditor.Android.AndroidBuildPostprocessor/AndroidSourcePlugin>,bool) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:407)
+UnityEditor.Android.AndroidBuildPostprocessor:PluginsDataFor (UnityEditor.Modules.BuildPostProcessArgs) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:470)
+UnityEditor.Modules.BeeBuildPostprocessor/<GetDataForBuildProgramFor>d__49:MoveNext ()
+UnityEditor.Android.AndroidBuildPostprocessor/<GetDataForBuildProgramFor>d__29:MoveNext () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:730)
+System.Linq.Enumerable/WhereEnumerableIterator`1<object>:MoveNext ()
+Bee.BeeDriver.BeeDriver:WriteDataForBuildProgram (Bee.BeeDriver.InternalState,System.Threading.Tasks.TaskCompletionSource`1<int>)
+Bee.BeeDriver.BeeDriver/<>c__DisplayClass0_0:<BuildAsync>g__WriteData|0 ()
+Bee.BeeDriver.BeeDriver:BuildAsync (Bee.BeeDriver.BuildRequest,System.Threading.CancellationToken)
+UnityEditor.Modules.BeeBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs)
+UnityEditor.Modules.DefaultBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&)
+UnityEditor.Android.AndroidBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:228)
+UnityEditor.PostprocessBuildPlayer:Postprocess (UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,string,string,string,int,int,UnityEditor.BuildOptions,UnityEditor.RuntimeClassRegistry,UnityEditor.Build.Reporting.BuildReport)
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs Line: 407)
+
+Plugin 'Packages/com.netpyoung.webp/Plugins/Android/libs/arm64-v8a/libwebp.so' is not 16KB-aligned. This may cause issues on ARM64 devices running Android 15+.
+More info: <a href="https://developer.android.com/guide/practices/page-sizes">https://developer.android.com/guide/practices/page-sizes</a>.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Android.AndroidBuildPostprocessor:CollectPlugin (string,Unity.Android.Types.AndroidArchitecture,System.Collections.Generic.Dictionary`2<string, UnityEditor.Android.AndroidBuildPostprocessor/AndroidSourcePlugin>,bool) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:407)
+UnityEditor.Android.AndroidBuildPostprocessor:PluginsDataFor (UnityEditor.Modules.BuildPostProcessArgs) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:470)
+UnityEditor.Modules.BeeBuildPostprocessor/<GetDataForBuildProgramFor>d__49:MoveNext ()
+UnityEditor.Android.AndroidBuildPostprocessor/<GetDataForBuildProgramFor>d__29:MoveNext () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:730)
+System.Linq.Enumerable/WhereEnumerableIterator`1<object>:MoveNext ()
+Bee.BeeDriver.BeeDriver:WriteDataForBuildProgram (Bee.BeeDriver.InternalState,System.Threading.Tasks.TaskCompletionSource`1<int>)
+Bee.BeeDriver.BeeDriver/<>c__DisplayClass0_0:<BuildAsync>g__WriteData|0 ()
+Bee.BeeDriver.BeeDriver:BuildAsync (Bee.BeeDriver.BuildRequest,System.Threading.CancellationToken)
+UnityEditor.Modules.BeeBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs)
+UnityEditor.Modules.DefaultBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&)
+UnityEditor.Android.AndroidBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:228)
+UnityEditor.PostprocessBuildPlayer:Postprocess (UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,string,string,string,int,int,UnityEditor.BuildOptions,UnityEditor.RuntimeClassRegistry,UnityEditor.Build.Reporting.BuildReport)
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs Line: 407)
+
+Plugin 'Packages/com.unity.xr.openxr.picoxr/Platform/Plugins/Android64/libpxrplatformloader.so' is not 16KB-aligned. This may cause issues on ARM64 devices running Android 15+.
+More info: <a href="https://developer.android.com/guide/practices/page-sizes">https://developer.android.com/guide/practices/page-sizes</a>.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Android.AndroidBuildPostprocessor:CollectPlugin (string,Unity.Android.Types.AndroidArchitecture,System.Collections.Generic.Dictionary`2<string, UnityEditor.Android.AndroidBuildPostprocessor/AndroidSourcePlugin>,bool) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:407)
+UnityEditor.Android.AndroidBuildPostprocessor:PluginsDataFor (UnityEditor.Modules.BuildPostProcessArgs) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:470)
+UnityEditor.Modules.BeeBuildPostprocessor/<GetDataForBuildProgramFor>d__49:MoveNext ()
+UnityEditor.Android.AndroidBuildPostprocessor/<GetDataForBuildProgramFor>d__29:MoveNext () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:730)
+System.Linq.Enumerable/WhereEnumerableIterator`1<object>:MoveNext ()
+Bee.BeeDriver.BeeDriver:WriteDataForBuildProgram (Bee.BeeDriver.InternalState,System.Threading.Tasks.TaskCompletionSource`1<int>)
+Bee.BeeDriver.BeeDriver/<>c__DisplayClass0_0:<BuildAsync>g__WriteData|0 ()
+Bee.BeeDriver.BeeDriver:BuildAsync (Bee.BeeDriver.BuildRequest,System.Threading.CancellationToken)
+UnityEditor.Modules.BeeBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs)
+UnityEditor.Modules.DefaultBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&)
+UnityEditor.Android.AndroidBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:228)
+UnityEditor.PostprocessBuildPlayer:Postprocess (UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,string,string,string,int,int,UnityEditor.BuildOptions,UnityEditor.RuntimeClassRegistry,UnityEditor.Build.Reporting.BuildReport)
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs Line: 407)
+
+Plugin 'Packages/com.netpyoung.webp/Plugins/Android/libs/arm64-v8a/libwebpdecoder.so' is not 16KB-aligned. This may cause issues on ARM64 devices running Android 15+.
+More info: <a href="https://developer.android.com/guide/practices/page-sizes">https://developer.android.com/guide/practices/page-sizes</a>.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Android.AndroidBuildPostprocessor:CollectPlugin (string,Unity.Android.Types.AndroidArchitecture,System.Collections.Generic.Dictionary`2<string, UnityEditor.Android.AndroidBuildPostprocessor/AndroidSourcePlugin>,bool) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:407)
+UnityEditor.Android.AndroidBuildPostprocessor:PluginsDataFor (UnityEditor.Modules.BuildPostProcessArgs) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:470)
+UnityEditor.Modules.BeeBuildPostprocessor/<GetDataForBuildProgramFor>d__49:MoveNext ()
+UnityEditor.Android.AndroidBuildPostprocessor/<GetDataForBuildProgramFor>d__29:MoveNext () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:730)
+System.Linq.Enumerable/WhereEnumerableIterator`1<object>:MoveNext ()
+Bee.BeeDriver.BeeDriver:WriteDataForBuildProgram (Bee.BeeDriver.InternalState,System.Threading.Tasks.TaskCompletionSource`1<int>)
+Bee.BeeDriver.BeeDriver/<>c__DisplayClass0_0:<BuildAsync>g__WriteData|0 ()
+Bee.BeeDriver.BeeDriver:BuildAsync (Bee.BeeDriver.BuildRequest,System.Threading.CancellationToken)
+UnityEditor.Modules.BeeBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs)
+UnityEditor.Modules.DefaultBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&)
+UnityEditor.Android.AndroidBuildPostprocessor:PostProcess (UnityEditor.Modules.BuildPostProcessArgs,UnityEditor.BuildProperties&) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:228)
+UnityEditor.PostprocessBuildPlayer:Postprocess (UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,string,string,string,int,int,UnityEditor.BuildOptions,UnityEditor.RuntimeClassRegistry,UnityEditor.Build.Reporting.BuildReport)
+UnityEditor.BuildPipeline:BuildPlayerInternal (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (string[],string,string,UnityEditor.BuildTargetGroup,UnityEditor.BuildTarget,int,UnityEditor.BuildOptions,string[])
+UnityEditor.BuildPipeline:BuildPlayer (UnityEditor.BuildPlayerOptions)
+QuestCraftCliBuild:BuildAndroid () (at Assets/Editor/QuestCraftCliBuild.cs:86)
+
+(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs Line: 407)
+
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\bee_backend.exe --ipc --dagfile="Library/Bee/Player1a4ac495.dag" --profile="Library/Bee/backend1.traceevents" Player
+WorkingDir: C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper
+DisplayProgressbar: Incremental Player Build
+[ 706/1293  0s] CopyFiles C:/Users/User/questcraft-26.2-experiment/QCXR-XR-Wrapper/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/Pojlib-release.aar
+*** Tundra build success (0.18 seconds), 1 items updated, 1293 evaluated
+ExitCode: 0 Duration: 0s217ms
+DisplayProgressbar: Calling IPostGenerateGradleAndroidProject callbacks
+Calling IPostGenerateGradleAndroidProject callbacks on 'C:\Users\User\questcraft-26.2-experiment\QCXR-XR-Wrapper\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary':
+    Call "Unity.XR.OpenXR.Features.PICOSupport.PICOModifyAndroidManifest.OnPostGenerateGradleAndroidProject" from assembly 'Unity.XR.OpenXR.Features.PICOSupport.Editor'
+    Call "Unity.XR.Management.AndroidManifest.Editor.AndroidManifestBuildEventReceiver.OnPostGenerateGradleAndroidProject" from assembly 'Unity.XR.Management.Editor'
+    Call "UnityEditor.XR.OpenXR.Features.OculusQuestSupport.ModifyAndroidManifestOculus.OnPostGenerateGradleAndroidProject" from assembly 'Unity.XR.OpenXR.Features.OculusQuestSupport.Editor'
+    Call "UnityEditor.XR.OpenXR.Features.MetaQuestSupport.ModifyAndroidManifestMeta.OnPostGenerateGradleAndroidProject" from assembly 'Unity.XR.OpenXR.Features.MetaQuestSupport.Editor'
+    Call "UnityEditor.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeatureBuildHooks.OnPostGenerateGradleAndroidProject" from assembly 'Unity.XR.OpenXR.Features.MetaQuestSupport.Editor'
+    Call "Pico.Platform.Editor.PlatformManifestRewrite.OnPostGenerateGradleAndroidProject" from assembly 'PICO.Platform.Editor'
+Android PostProcess task "Calling IPostGenerateGradleAndroidProject callbacks" took 61.6135 ms
+Android PostProcess task "Cloud Diagnostics Symbol Upload" took 0.2761 ms
+DisplayProgressbar: Building Gradle project
+Total cache size 147267829
+Total cache size after purge 147267829
+Android PostProcess task "Building Gradle project" took 24166.4813 ms
+DisplayProgressbar: Processing Mapping File
+Android PostProcess task "Processing Mapping File" took 0.4734 ms
+DisplayProgressbar: Moving output package(s)
+Android PostProcess task "Moving output package(s)" took 72.8986 ms
+Refreshing native plugins compatible for Editor in 113.23 ms, found 19 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+-------------------------------------------------------------------------------
+Build Report
+Information on used Assets is not available, since player data was not rebuilt.
+Do a clean build to view the Asset build report information.
+-------------------------------------------------------------------------------
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 206 unused Assets / (1.5 MB). Loaded Objects now: 5540.
+Memory consumption went from 149.0 MB to 147.5 MB.
+Total: 8.004300 ms (FindLiveObjects: 0.709400 ms CreateObjectMapping: 0.180300 ms MarkObjects: 5.904700 ms  DeleteObjects: 1.208400 ms)
+
+DisplayProgressNotification: Build Successful
+Build Finished, Result: Success.
+##utp:{"type":"PlayerBuildInfo","version":2,"phase":"Immediate","time":1787986425634,"processId":17172,"steps":[{"description":"Preprocess Player","duration":292},{"description":"Prepare For Build","duration":3018},{"description":"ProducePlayerScriptAssemblies","duration":2604},{"description":"Verify Build setup","duration":758},{"description":"Prepare assets for target platform","duration":80},{"description":"Prepare splash screen","duration":6},{"description":"Run script only build","duration":122},{"description":"Postprocess built player","duration":25762}],"duration":32642}
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.188 ms
+	Integration:            19.146 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   20.341 ms
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 5540.
+Memory consumption went from 134.6 MB to 134.6 MB.
+Total: 4.670600 ms (FindLiveObjects: 0.400900 ms CreateObjectMapping: 0.204400 ms MarkObjects: 4.055200 ms  DeleteObjects: 0.009100 ms)
+
+Batchmode quit successfully invoked - shutting down!
+Killing ADB server in 0.1260376 seconds.
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9b426df834fc3115a1b9d08f759588d5') in 0.003982 seconds
+Refreshing native plugins compatible for Editor in 43.27 ms, found 19 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4b80b441f0981244c8a5d1195d1e7590): Total: 0.202 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-User-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-User channel disconnected successfully.
+Cleanup mono
+abort_threads: Failed aborting id: 0000000000004AC8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000003F14, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000003470, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000004AC8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000003F14, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000003470, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 4940
+[usbmuxd] Stop listen thread
+[usbmuxd] Listen thread exiting
+[Performance] WinEditorMain                                                                                                                                :        1 samples, Peak.   692 ms (1.0x), Avg.   692 ms, Total. 692.4 ms (1.2%)
+[Performance] WinEditorMain.ConfigureCrashHandler                                                                                                          :        1 samples, Peak.  29.8 us (1.0x), Avg.  29.8 us, Total. 29.80 us (0.0%)
+[Performance] WinEditorMain.CurlRequestInitialize                                                                                                          :        1 samples, Peak.  3.94 ms (1.0x), Avg.  3.94 ms, Total. 3.937 ms (0.0%)
+[Performance] WinEditorMain.SetupLogFile                                                                                                                   :        1 samples, Peak.  1.23 ms (1.0x), Avg.  1.23 ms, Total. 1.233 ms (0.0%)
+[Performance] WinEditorMain.RunNativeTestsIfRequiredAndExit                                                                                                :        1 samples, Peak.   100 ns (1.0x), Avg.   100 ns, Total. 100.0 ns (0.0%)
+[Performance] WinEditorMain.Licensing                                                                                                                      :        1 samples, Peak.   662 ms (1.0x), Avg.   662 ms, Total. 661.7 ms (1.1%)
+[Performance] WinEditorMain.InitializeCrashHandler                                                                                                         :        1 samples, Peak.  16.3 ms (1.0x), Avg.  16.3 ms, Total. 16.33 ms (0.0%)
+[Performance] WinEditorMain.CreateApplication                                                                                                              :        1 samples, Peak.  1.55 ms (1.0x), Avg.  1.55 ms, Total. 1.554 ms (0.0%)
+[Performance] Application.InitializeProject                                                                                                                :        1 samples, Peak.  13.9 s (1.0x), Avg.  13.9 s, Total. 13.93 s (24.1%)
+[Performance] Application.PackageManager.StartServer                                                                                                       :        1 samples, Peak.  13.9 ms (1.0x), Avg.  13.9 ms, Total. 13.85 ms (0.0%)
+[Performance] Application.AcquireProjectLock                                                                                                               :        1 samples, Peak.  5.58 ms (1.0x), Avg.  5.58 ms, Total. 5.575 ms (0.0%)
+[Performance] Application.InitializeEngineNoGraphics                                                                                                       :        1 samples, Peak.   139 ms (1.0x), Avg.   139 ms, Total. 138.6 ms (0.2%)
+[Performance] Application.PackageManager.Initialize                                                                                                        :        1 samples, Peak.   480 ms (1.0x), Avg.   480 ms, Total. 480.4 ms (0.8%)
+[Performance] Connecting to Package Manager                                                                                                                :       49 samples, Peak.  83.8 us (25.9x), Avg.  3.23 us, Total. 158.3 us (0.0%)
+[Performance] Application.EngineGraphics.Initialize                                                                                                        :        1 samples, Peak.  82.8 ms (1.0x), Avg.  82.8 ms, Total. 82.77 ms (0.1%)
+[Performance] Application.GI.Initialize                                                                                                                    :        1 samples, Peak.  17.4 ms (1.0x), Avg.  17.4 ms, Total. 17.36 ms (0.0%)
+[Performance] Application.LoadAllDefaultResourcesFromEditor                                                                                                :        1 samples, Peak.  2.14 ms (1.0x), Avg.  2.14 ms, Total. 2.139 ms (0.0%)
+[Performance] Application.LoadMonoAssemblies                                                                                                               :        1 samples, Peak.  3.35 s (1.0x), Avg.  3.35 s, Total. 3.355 s (5.8%)
+[Performance] RestoreManagedReferences                                                                                                                     :        2 samples, Peak.  54.8 ms (2.0x), Avg.  27.4 ms, Total. 54.83 ms (0.1%)
+[Performance] InitializeOnLoad DrivenRectTransformUndo                                                                                                     :        2 samples, Peak.   532 us (1.3x), Avg.   421 us, Total. 841.9 us (0.0%)
+[Performance] InitializeOnLoad SceneSearch                                                                                                                 :        2 samples, Peak.   111 us (1.0x), Avg.   108 us, Total. 215.5 us (0.0%)
+[Performance] InitializeOnLoad CloudBuild                                                                                                                  :        2 samples, Peak.  4.20 us (1.2x), Avg.  3.60 us, Total. 7.200 us (0.0%)
+[Performance] InitializeOnLoad NativeFormatImporterUtility                                                                                                 :        2 samples, Peak.  2.62 ms (1.3x), Avg.  2.01 ms, Total. 4.024 ms (0.0%)
+[Performance] InitializeOnLoad SearchService                                                                                                               :        2 samples, Peak.   147 us (1.1x), Avg.   134 us, Total. 267.9 us (0.0%)
+[Performance] InitializeOnLoad SettingsService                                                                                                             :        2 samples, Peak.  13.4 us (1.3x), Avg.  10.1 us, Total. 20.20 us (0.0%)
+[Performance] InitializeOnLoad WindowLayout                                                                                                                :        2 samples, Peak.   497 us (1.4x), Avg.   361 us, Total. 722.0 us (0.0%)
+[Performance] InitializeOnLoad AssetStoreContext                                                                                                           :        2 samples, Peak.  21.4 ms (1.7x), Avg.  12.9 ms, Total. 25.75 ms (0.0%)
+[Performance] InitializeOnLoad PoolManager                                                                                                                 :        2 samples, Peak.   755 us (1.3x), Avg.   593 us, Total. 1.186 ms (0.0%)
+[Performance] InitializeOnLoad MixerEffectDefinitionReloader                                                                                               :        2 samples, Peak.  8.91 ms (1.7x), Avg.  5.31 ms, Total. 10.62 ms (0.0%)
+[Performance] InitializeOnLoad ProjectSearch                                                                                                               :        2 samples, Peak.  92.2 us (1.1x), Avg.  84.8 us, Total. 169.5 us (0.0%)
+[Performance] InitializeOnLoad UISystemProfilerRenderService                                                                                               :        2 samples, Peak.  11.7 us (1.1x), Avg.  10.8 us, Total. 21.70 us (0.0%)
+[Performance] InitializeOnLoad EditMode                                                                                                                    :        2 samples, Peak.  1.03 ms (1.5x), Avg.   703 us, Total. 1.407 ms (0.0%)
+[Performance] InitializeOnLoad UnityConnect                                                                                                                :        2 samples, Peak.  63.4 us (1.2x), Avg.  53.1 us, Total. 106.2 us (0.0%)
+[Performance] InitializeOnLoad ManagedDebugger                                                                                                             :        2 samples, Peak.   679 us (1.1x), Avg.   632 us, Total. 1.264 ms (0.0%)
+[Performance] InitializeOnLoad ShortcutIntegration                                                                                                         :        2 samples, Peak.  90.0 us (1.4x), Avg.  66.5 us, Total. 133.1 us (0.0%)
+[Performance] InitializeOnLoad AddComponentWindow                                                                                                          :        2 samples, Peak.   134 us (1.2x), Avg.   112 us, Total. 223.1 us (0.0%)
+[Performance] InitializeOnLoad ManagedDebuggerWindow                                                                                                       :        2 samples, Peak.   160 us (1.2x), Avg.   129 us, Total. 258.7 us (0.0%)
+[Performance] InitializeOnLoad CacheServerWindow                                                                                                           :        2 samples, Peak.  9.10 us (1.1x), Avg.  8.65 us, Total. 17.30 us (0.0%)
+[Performance] InitializeOnLoad PlayModeDownload                                                                                                            :        2 samples, Peak.  3.60 ms (1.9x), Avg.  1.85 ms, Total. 3.701 ms (0.0%)
+[Performance] InitializeOnLoad MenuItems                                                                                                                   :        2 samples, Peak.  87.3 us (1.1x), Avg.  78.2 us, Total. 156.3 us (0.0%)
+[Performance] InitializeOnLoad PrefabInstanceChangedListener                                                                                               :        2 samples, Peak.   103 us (1.0x), Avg.   103 us, Total. 205.1 us (0.0%)
+[Performance] InitializeOnLoad ObjectSelectorSearch                                                                                                        :        2 samples, Peak.  38.1 us (1.1x), Avg.  33.1 us, Total. 66.30 us (0.0%)
+[Performance] InitializeOnLoad EditorMonitor                                                                                                               :        2 samples, Peak.   591 us (1.3x), Avg.   464 us, Total. 927.7 us (0.0%)
+[Performance] InitializeOnLoad RetainedMode                                                                                                                :        2 samples, Peak.  2.61 ms (1.1x), Avg.  2.35 ms, Total. 4.707 ms (0.0%)
+[Performance] InitializeOnLoad EditorShaderLoader                                                                                                          :        2 samples, Peak.  1.57 ms (1.4x), Avg.  1.13 ms, Total. 2.258 ms (0.0%)
+[Performance] InitializeOnLoad EditorDelegateRegistration                                                                                                  :        2 samples, Peak.   624 us (1.1x), Avg.   545 us, Total. 1.090 ms (0.0%)
+[Performance] InitializeOnLoad UIDocumentHierarchyWatcher                                                                                                  :        2 samples, Peak.  98.6 us (1.2x), Avg.  82.5 us, Total. 164.9 us (0.0%)
+[Performance] InitializeOnLoad LiveReloadTrackerCreator                                                                                                    :        2 samples, Peak.   349 us (1.4x), Avg.   246 us, Total. 491.4 us (0.0%)
+[Performance] InitializeOnLoad UxmlObjectEditorFactories                                                                                                   :        2 samples, Peak.   635 us (1.1x), Avg.   558 us, Total. 1.115 ms (0.0%)
+[Performance] InitializeOnLoad UXMLEditorFactories                                                                                                         :        2 samples, Peak.  52.2 ms (1.0x), Avg.  50.8 ms, Total. 101.5 ms (0.2%)
+[Performance] InitializeOnLoad PurchasingService                                                                                                           :        2 samples, Peak.  10.6 ms (1.5x), Avg.  6.84 ms, Total. 13.68 ms (0.0%)
+[Performance] InitializeOnLoad CloudBuildPoller                                                                                                            :        2 samples, Peak.   104 us (1.0x), Avg.   104 us, Total. 207.6 us (0.0%)
+[Performance] InitializeOnLoad EditorGameServicesAnalytics                                                                                                 :        2 samples, Peak.  2.05 ms (1.5x), Avg.  1.41 ms, Total. 2.811 ms (0.0%)
+[Performance] InitializeOnLoad AnalyticsService                                                                                                            :        2 samples, Peak.   157 us (1.0x), Avg.   155 us, Total. 310.1 us (0.0%)
+[Performance] InitializeOnLoad BuildService                                                                                                                :        2 samples, Peak.   113 us (1.1x), Avg.   107 us, Total. 213.7 us (0.0%)
+[Performance] InitializeOnLoad AdsService                                                                                                                  :        2 samples, Peak.   662 us (1.3x), Avg.   500 us, Total. 999.6 us (0.0%)
+[Performance] InitializeOnLoad UDPService                                                                                                                  :        2 samples, Peak.   138 us (1.0x), Avg.   134 us, Total. 268.1 us (0.0%)
+[Performance] InitializeOnLoad CrashService                                                                                                                :        2 samples, Peak.   113 us (1.0x), Avg.   109 us, Total. 218.3 us (0.0%)
+[Performance] InitializeOnLoad ServicesRepository                                                                                                          :        2 samples, Peak.   500 ns (1.4x), Avg.   350 ns, Total. 700.0 ns (0.0%)
+[Performance] InitializeOnLoad SearchWindow                                                                                                                :        2 samples, Peak.   135 us (1.1x), Avg.   121 us, Total. 242.8 us (0.0%)
+[Performance] InitializeOnLoad CustomIndexers                                                                                                              :        2 samples, Peak.  20.3 ms (1.2x), Avg.  16.5 ms, Total. 32.97 ms (0.1%)
+[Performance] InitializeOnLoad SearchMonitor                                                                                                               :        2 samples, Peak.  1.54 ms (1.2x), Avg.  1.29 ms, Total. 2.588 ms (0.0%)
+[Performance] InitializeOnLoad ParameterControllerEditor                                                                                                   :        2 samples, Peak.  39.0 us (1.2x), Avg.  32.5 us, Total. 65.00 us (0.0%)
+[Performance] InitializeOnLoad LayerSettingsWindow                                                                                                         :        2 samples, Peak.  34.6 us (1.7x), Avg.  20.0 us, Total. 40.10 us (0.0%)
+[Performance] InitializeOnLoad PackageManagerHookGUIDConverter.RegisterPackagesEventHandler                                                                :        2 samples, Peak.   606 us (1.8x), Avg.   331 us, Total. 662.8 us (0.0%)
+[Performance] InitializeOnLoad EditorDragAndDrop.RegisterEditorClient                                                                                      :        2 samples, Peak.   253 us (1.2x), Avg.   207 us, Total. 414.3 us (0.0%)
+[Performance] InitializeOnLoad EditorEventCallbacks.InitializeFontAssetResourceChangeCallBacks                                                             :        2 samples, Peak.  1.07 ms (1.1x), Avg.   967 us, Total. 1.934 ms (0.0%)
+[Performance] InitializeOnLoad SceneTemplateService.Init                                                                                                   :        2 samples, Peak.  1.07 ms (1.1x), Avg.  1.00 ms, Total. 2.005 ms (0.0%)
+[Performance] InitializeOnLoad DiagnosticSwitchesConsoleMessage.Init                                                                                       :        2 samples, Peak.  10.2 ms (1.9x), Avg.  5.34 ms, Total. 10.69 ms (0.0%)
+[Performance] InitializeOnLoad PackageManagerWindow.EditorInitializedInSafeMode                                                                            :        2 samples, Peak.  35.6 ms (2.0x), Avg.  17.9 ms, Total. 35.72 ms (0.1%)
+[Performance] InitializeOnLoad ToolShortcutContext.Init                                                                                                    :        2 samples, Peak.   154 us (1.1x), Avg.   142 us, Total. 283.9 us (0.0%)
+[Performance] InitializeOnLoad MemoryProfilerCompilationGuard.InjectCompileGuard                                                                           :        2 samples, Peak.   175 us (1.2x), Avg.   152 us, Total. 303.4 us (0.0%)
+[Performance] InitializeOnLoad AssetPostprocessingInternal.RefreshCustomDependencies                                                                       :        2 samples, Peak.  4.51 ms (1.7x), Avg.  2.68 ms, Total. 5.367 ms (0.0%)
+[Performance] InitializeOnLoad SysrootManager.Initialize                                                                                                   :        2 samples, Peak.  17.6 us (1.1x), Avg.  15.8 us, Total. 31.60 us (0.0%)
+[Performance] InitializeOnLoad ScopedRegistryAddedPopup.SubscribeToRegistriesAdded                                                                         :        2 samples, Peak.  6.76 ms (2.0x), Avg.  3.44 ms, Total. 6.883 ms (0.0%)
+[Performance] InitializeOnLoad SceneVisibilityManager.Initialize                                                                                           :        2 samples, Peak.  3.91 ms (1.7x), Avg.  2.36 ms, Total. 4.716 ms (0.0%)
+[Performance] InitializeOnLoad EditorWindow.Initialize                                                                                                     :        2 samples, Peak.   221 us (1.0x), Avg.   213 us, Total. 426.5 us (0.0%)
+[Performance] AssemblyReloadEvents.afterAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.AfterAssemblyReload                                 :        2 samples, Peak.  4.01 ms (1.9x), Avg.  2.16 ms, Total. 4.313 ms (0.0%)
+[Performance] ProcessService.EditorAfterLoadAllAssemblies                                                                                                  :        2 samples, Peak.   611 us (1.3x), Avg.   463 us, Total. 926.5 us (0.0%)
+[Performance] Application.ReadLicenseInfo                                                                                                                  :        1 samples, Peak.  78.1 ms (1.0x), Avg.  78.1 ms, Total. 78.05 ms (0.1%)
+[Performance] Application.InitialRefresh                                                                                                                   :        1 samples, Peak.  8.12 s (1.0x), Avg.  8.12 s, Total. 8.118 s (14.0%)
+[Performance] ShaderImporter.SourceAssetModified                                                                                                           :        4 samples, Peak.  1.40 us (1.6x), Avg.   900 ns, Total. 3.600 us (0.0%)
+[Performance] ShaderIncludeImporter.SourceAssetModified                                                                                                    :        4 samples, Peak.  1.20 us (1.2x), Avg.   975 ns, Total. 3.900 us (0.0%)
+[Performance] Compiling Scripts                                                                                                                            :        1 samples, Peak.  1.10 s (1.0x), Avg.  1.10 s, Total. 1.095 s (1.9%)
+[Performance] AssemblyReloadEvents.beforeAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.BeforeAssemblyReload                               :        1 samples, Peak.   362 us (1.0x), Avg.   362 us, Total. 362.0 us (0.0%)
+[Performance] PresetManagerPostProcessor.OnPreprocessAsset                                                                                                 :        4 samples, Peak.  1.46 ms (2.8x), Avg.   517 us, Total. 2.069 ms (0.0%)
+[Performance] NugetPackageAssetPostprocessor.OnPreprocessAsset                                                                                             :        4 samples, Peak.  36.8 ms (4.0x), Avg.  9.21 ms, Total. 36.85 ms (0.1%)
+[Performance] CancelSplashScreenOnAssetChange.OnPreprocessAsset                                                                                            :        4 samples, Peak.   706 us (4.0x), Avg.   178 us, Total. 713.4 us (0.0%)
+[Performance] InitializeOnLoad TouchSimulation                                                                                                             :        1 samples, Peak.   280 us (1.0x), Avg.   280 us, Total. 280.3 us (0.0%)
+[Performance] InitializeOnLoad InputSystem                                                                                                                 :        1 samples, Peak.  51.6 ms (1.0x), Avg.  51.6 ms, Total. 51.65 ms (0.1%)
+[Performance] InitializeOnLoad InputSystemUIInputModuleEditor                                                                                              :        1 samples, Peak.   179 us (1.0x), Avg.   179 us, Total. 178.7 us (0.0%)
+[Performance] InitializeOnLoad EnableUITKEditor                                                                                                            :        1 samples, Peak.  22.6 us (1.0x), Avg.  22.6 us, Total. 22.60 us (0.0%)
+[Performance] InitializeOnLoad ScriptableSettingsInitializer                                                                                               :        1 samples, Peak.   224 us (1.0x), Avg.   224 us, Total. 223.5 us (0.0%)
+[Performance] InitializeOnLoad BuildValidator                                                                                                              :        1 samples, Peak.   706 us (1.0x), Avg.   706 us, Total. 705.5 us (0.0%)
+[Performance] InitializeOnLoad XRGeneralSettingsPerBuildTarget                                                                                             :        1 samples, Peak.   493 us (1.0x), Avg.   493 us, Total. 493.4 us (0.0%)
+[Performance] InitializeOnLoad XRPackageMetadataStore                                                                                                      :        1 samples, Peak.   490 us (1.0x), Avg.   490 us, Total. 490.4 us (0.0%)
+[Performance] InitializeOnLoad XRPackageInitializationBootstrap                                                                                            :        1 samples, Peak.  47.8 us (1.0x), Avg.  47.8 us, Total. 47.80 us (0.0%)
+[Performance] InitializeOnLoad XRLegacyUninstaller                                                                                                         :        1 samples, Peak.  9.34 ms (1.0x), Avg.  9.34 ms, Total. 9.336 ms (0.0%)
+[Performance] InitializeOnLoad BuildHelperUtils                                                                                                            :        1 samples, Peak.  23.6 us (1.0x), Avg.  23.6 us, Total. 23.60 us (0.0%)
+[Performance] InitializeOnLoad SectorInteraction                                                                                                           :        1 samples, Peak.   561 us (1.0x), Avg.   561 us, Total. 561.3 us (0.0%)
+[Performance] InitializeOnLoad QuaternionFallbackComposite                                                                                                 :        1 samples, Peak.   136 us (1.0x), Avg.   136 us, Total. 135.9 us (0.0%)
+[Performance] InitializeOnLoad Vector3FallbackComposite                                                                                                    :        1 samples, Peak.  75.4 us (1.0x), Avg.  75.4 us, Total. 75.40 us (0.0%)
+[Performance] InitializeOnLoad SimulatedInputLayoutLoader                                                                                                  :        1 samples, Peak.   245 us (1.0x), Avg.   245 us, Total. 245.1 us (0.0%)
+[Performance] InitializeOnLoad ButtonFallbackComposite                                                                                                     :        1 samples, Peak.  72.6 us (1.0x), Avg.  72.6 us, Total. 72.60 us (0.0%)
+[Performance] InitializeOnLoad IntegerFallbackComposite                                                                                                    :        1 samples, Peak.  54.9 us (1.0x), Avg.  54.9 us, Total. 54.90 us (0.0%)
+[Performance] InitializeOnLoad UnityTestProtocolStarter                                                                                                    :        1 samples, Peak.   323 us (1.0x), Avg.   323 us, Total. 323.3 us (0.0%)
+[Performance] InitializeOnLoad BackgroundWatcher                                                                                                           :        1 samples, Peak.  70.5 us (1.0x), Avg.  70.5 us, Total. 70.50 us (0.0%)
+[Performance] InitializeOnLoad RiderScriptEditor                                                                                                           :        1 samples, Peak.  44.0 ms (1.0x), Avg.  44.0 ms, Total. 44.04 ms (0.1%)
+[Performance] InitializeOnLoad CallbackInitializer                                                                                                         :        1 samples, Peak.  2.09 ms (1.0x), Avg.  2.09 ms, Total. 2.089 ms (0.0%)
+[Performance] InitializeOnLoad SpriteEditorWindow                                                                                                          :        1 samples, Peak.   365 us (1.0x), Avg.   365 us, Total. 365.0 us (0.0%)
+[Performance] InitializeOnLoad PXR_PlatformSetting                                                                                                         :        1 samples, Peak.  5.10 us (1.0x), Avg.  5.10 us, Total. 5.100 us (0.0%)
+[Performance] InitializeOnLoad CoverageReporterStarter                                                                                                     :        1 samples, Peak.  4.53 ms (1.0x), Avg.  4.53 ms, Total. 4.533 ms (0.0%)
+[Performance] InitializeOnLoad PlasticPlugin                                                                                                               :        1 samples, Peak.  49.7 ms (1.0x), Avg.  49.7 ms, Total. 49.70 ms (0.1%)
+[Performance] InitializeOnLoad ToolbarBootstrap                                                                                                            :        1 samples, Peak.  41.5 ms (1.0x), Avg.  41.5 ms, Total. 41.45 ms (0.1%)
+[Performance] InitializeOnLoad VSCodeScriptEditor                                                                                                          :        1 samples, Peak.  7.47 ms (1.0x), Avg.  7.47 ms, Total. 7.475 ms (0.0%)
+[Performance] InitializeOnLoad VSUsageUtility                                                                                                              :        1 samples, Peak.  26.8 ms (1.0x), Avg.  26.8 ms, Total. 26.82 ms (0.0%)
+[Performance] InitializeOnLoad VisualStudioEditor                                                                                                          :        1 samples, Peak.  5.47 ms (1.0x), Avg.  5.47 ms, Total. 5.472 ms (0.0%)
+[Performance] InitializeOnLoad TestRunnerApiListener                                                                                                       :        1 samples, Peak.   388 us (1.0x), Avg.   388 us, Total. 388.1 us (0.0%)
+[Performance] InitializeOnLoad VisualStudioIntegration                                                                                                     :        1 samples, Peak.   843 us (1.0x), Avg.   843 us, Total. 842.7 us (0.0%)
+[Performance] InitializeOnLoad PrefabLayoutRebuilder                                                                                                       :        1 samples, Peak.   290 us (1.0x), Avg.   290 us, Total. 290.5 us (0.0%)
+[Performance] InitializeOnLoad OnLoadNuGetPackageRestorer                                                                                                  :        1 samples, Peak.  43.9 ms (1.0x), Avg.  43.9 ms, Total. 43.88 ms (0.1%)
+[Performance] AssetDatabase.Refresh                                                                                                                        :        2 samples, Peak.  8.47 ms (2.0x), Avg.  4.24 ms, Total. 8.477 ms (0.0%)
+[Performance] InitializeOnLoad SysrootPackage.IssueWarningIfLinuxIL2CPPNotPresent                                                                          :        1 samples, Peak.   233 us (1.0x), Avg.   233 us, Total. 232.6 us (0.0%)
+[Performance] InitializeOnLoad OpenXRProjectValidationRulesSetup.OpenXRProjectValidationCheck                                                              :        1 samples, Peak.  21.1 ms (1.0x), Avg.  21.1 ms, Total. 21.08 ms (0.0%)
+[Performance] InitializeOnLoad OpenXRFeatureSetManager.InitializeOnLoad                                                                                    :        1 samples, Peak.   266 us (1.0x), Avg.   266 us, Total. 265.9 us (0.0%)
+[Performance] InitializeOnLoad OpenXRChooseRuntimeLibraries.InitializeOnLoad                                                                               :        1 samples, Peak.  3.18 ms (1.0x), Avg.  3.18 ms, Total. 3.185 ms (0.0%)
+[Performance] InitializeOnLoad InputSystemPackageControl.SubscribePackageManagerEvent                                                                      :        1 samples, Peak.   124 us (1.0x), Avg.   124 us, Total. 124.3 us (0.0%)
+[Performance] InitializeOnLoad InputSystemPluginControl.CheckForExtension                                                                                  :        1 samples, Peak.  1.66 ms (1.0x), Avg.  1.66 ms, Total. 1.656 ms (0.0%)
+[Performance] InitializeOnLoad VisualStudioEditor.LegacyVisualStudioCodePackageDisabler                                                                    :        1 samples, Peak.  3.61 ms (1.0x), Avg.  3.61 ms, Total. 3.606 ms (0.0%)
+[Performance] InitializeOnLoad CoreUtilsAnalytics.RegisterEvents                                                                                           :        1 samples, Peak.   730 us (1.0x), Avg.   730 us, Total. 730.5 us (0.0%)
+[Performance] InitializeOnLoad XRPluginManagementProjectValidation.RegisterProjectValidationRules                                                          :        1 samples, Peak.   865 us (1.0x), Avg.   865 us, Total. 864.6 us (0.0%)
+[Performance] InitializeOnLoad OpenXRInput.RegisterFeatureLayouts                                                                                          :        1 samples, Peak.   984 us (1.0x), Avg.   984 us, Total. 984.3 us (0.0%)
+[Performance] InitializeOnLoad AnalyticsReporter.RegisterCallbacks                                                                                         :        1 samples, Peak.  3.19 ms (1.0x), Avg.  3.19 ms, Total. 3.188 ms (0.0%)
+[Performance] InitializeOnLoad TestJobDataHolder.ResumeRunningJobs                                                                                         :        1 samples, Peak.   989 us (1.0x), Avg.   989 us, Total. 988.9 us (0.0%)
+[Performance] InitializeOnLoad TestStarter.Initialize                                                                                                      :        1 samples, Peak.  1.46 ms (1.0x), Avg.  1.46 ms, Total. 1.464 ms (0.0%)
+[Performance] DidReloadScriptsAdvancedDropdownWindow.OnScriptReload                                                                                        :        2 samples, Peak.   438 us (1.3x), Avg.   333 us, Total. 665.3 us (0.0%)
+[Performance] DidReloadScriptsPackageVersionUtility.OnReloadScripts                                                                                        :        1 samples, Peak.  98.2 us (1.0x), Avg.  98.2 us, Total. 98.20 us (0.0%)
+[Performance] DidReloadScriptsTestListCache.ScriptReloaded                                                                                                 :        1 samples, Peak.  1.66 ms (1.0x), Avg.  1.66 ms, Total. 1.659 ms (0.0%)
+[Performance] DidReloadScriptsTestRunnerWindow.CompilationCallback                                                                                         :        1 samples, Peak.  1.01 ms (1.0x), Avg.  1.01 ms, Total. 1.005 ms (0.0%)
+[Performance] AssemblyReloadEvents.afterAssemblyReload: UnityEditor.XR.Management.Metadata.XRPackageMetadataStore.AssemblyReloadEvents_afterAssemblyReload :        1 samples, Peak.  3.07 ms (1.0x), Avg.  3.07 ms, Total. 3.073 ms (0.0%)
+[Performance] AssetDatabase.ImportAssets                                                                                                                   :        7 samples, Peak.   202 ms (5.0x), Avg.  40.7 ms, Total. 284.8 ms (0.5%)
+[Performance] VersionControl.Task.Wait                                                                                                                     :        1 samples, Peak.   430 us (1.0x), Avg.   430 us, Total. 430.3 us (0.0%)
+[Performance] TMPro_TexturePostProcessor.OnPostprocessAllAssets                                                                                            :        6 samples, Peak.   592 us (1.6x), Avg.   360 us, Total. 2.161 ms (0.0%)
+[Performance] AssetPostprocessor.OnPostprocessAllAssets                                                                                                    :        6 samples, Peak.  2.33 ms (3.0x), Avg.   779 us, Total. 4.674 ms (0.0%)
+[Performance] BuilderAssetPostprocessor.OnPostprocessAllAssets                                                                                             :        6 samples, Peak.  3.01 ms (2.9x), Avg.  1.03 ms, Total. 6.186 ms (0.0%)
+[Performance] ArtifactBrowserPostProcessor.OnPostprocessAllAssets                                                                                          :        6 samples, Peak.   942 us (3.0x), Avg.   316 us, Total. 1.897 ms (0.0%)
+[Performance] AssetEvents.OnPostprocessAllAssets                                                                                                           :       12 samples, Peak.  1.20 ms (5.6x), Avg.   213 us, Total. 2.557 ms (0.0%)
+[Performance] AudioMixerPostprocessor.OnPostprocessAllAssets                                                                                               :        6 samples, Peak.   360 us (3.0x), Avg.   122 us, Total. 731.3 us (0.0%)
+[Performance] StyleCatalogPostProcessor.OnPostprocessAllAssets                                                                                             :        6 samples, Peak.  25.9 ms (3.0x), Avg.  8.66 ms, Total. 51.95 ms (0.1%)
+[Performance] BuildCatalog                                                                                                                                 :        1 samples, Peak.  23.5 ms (1.0x), Avg.  23.5 ms, Total. 23.47 ms (0.0%)
+[Performance] ModelImporterPostProcessor.OnPostprocessAllAssets                                                                                            :        6 samples, Peak.  2.17 ms (2.9x), Avg.   739 us, Total. 4.437 ms (0.0%)
+[Performance] RetainedModeAssetPostprocessor.OnPostprocessAllAssets                                                                                        :        6 samples, Peak.  2.82 ms (3.0x), Avg.   949 us, Total. 5.692 ms (0.0%)
+[Performance] AssetChangedListener.OnPostprocessAllAssets                                                                                                  :        6 samples, Peak.  1.50 ms (2.5x), Avg.   592 us, Total. 3.549 ms (0.0%)
+[Performance] SpeedTreePostProcessor.OnPostprocessAllAssets                                                                                                :        6 samples, Peak.   208 us (2.7x), Avg.  76.0 us, Total. 455.8 us (0.0%)
+[Performance] TextAssetPostProcessor.OnPostprocessAllAssets                                                                                                :        6 samples, Peak.   401 us (1.6x), Avg.   250 us, Total. 1.502 ms (0.0%)
+[Performance] SpriteEditorTexturePostprocessor.OnPostprocessAllAssets                                                                                      :        6 samples, Peak.   280 us (1.9x), Avg.   145 us, Total. 869.9 us (0.0%)
+[Performance] AssetCallbacks.OnPostprocessAllAssets                                                                                                        :        6 samples, Peak.   141 ms (3.0x), Avg.  47.0 ms, Total. 282.3 ms (0.5%)
+[Performance] InputActionAssetPostprocessor.OnPostprocessAllAssets                                                                                         :        6 samples, Peak.   514 us (2.9x), Avg.   177 us, Total. 1.060 ms (0.0%)
+[Performance] InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets                                                                             :        6 samples, Peak.  74.6 us (2.6x), Avg.  28.8 us, Total. 172.9 us (0.0%)
+[Performance] ProjectSettingsPostprocessor.OnPostprocessAllAssets                                                                                          :        6 samples, Peak.   152 us (2.7x), Avg.  56.5 us, Total. 338.8 us (0.0%)
+[Performance] SyncVS.PostprocessSyncProject                                                                                                                :        3 samples, Peak.  9.96 ms (2.2x), Avg.  4.53 ms, Total. 13.60 ms (0.0%)
+[Performance] Application.ImportPackagesAndSetTemplateWhenCreatingProject                                                                                  :        1 samples, Peak.  75.4 ms (1.0x), Avg.  75.4 ms, Total. 75.45 ms (0.1%)
+[Performance] Application.SyncCurrentColorSpace                                                                                                            :        1 samples, Peak.  12.7 ms (1.0x), Avg.  12.7 ms, Total. 12.72 ms (0.0%)
+[Performance] Application.OnUsbDevicesChanged                                                                                                              :        1 samples, Peak.  7.50 ms (1.0x), Avg.  7.50 ms, Total. 7.502 ms (0.0%)
+[Performance] Application.AssetInstanceCacheUpdate                                                                                                         :        1 samples, Peak.   400 ns (1.0x), Avg.   400 ns, Total. 400.0 ns (0.0%)
+[Performance] Application.UnityExtensions.Initialize                                                                                                       :        1 samples, Peak.  6.44 ms (1.0x), Avg.  6.44 ms, Total. 6.436 ms (0.0%)
+[Performance] CodeEditorProjectSync.SyncEditorProject                                                                                                      :        1 samples, Peak.   290 ms (1.0x), Avg.   290 ms, Total. 289.7 ms (0.5%)
+[Performance] Application.ExecuteStartups                                                                                                                  :        1 samples, Peak.  72.9 ms (1.0x), Avg.  72.9 ms, Total. 72.88 ms (0.1%)
+[Performance] Menu.RegisterMenuInterface                                                                                                                   :       26 samples, Peak.  3.90 us (5.8x), Avg.   669 ns, Total. 17.40 us (0.0%)
+[Performance] Gizmo.RebuildRenderers                                                                                                                       :        2 samples, Peak.  65.9 ms (1.6x), Avg.  40.9 ms, Total. 81.80 ms (0.1%)
+[Performance] Gizmo.AddGizmoRenderers                                                                                                                      :      222 samples, Peak.  1.64 ms (117.8x), Avg.  13.9 us, Total. 3.084 ms (0.0%)
+[Performance] Application.editorInitializingProject                                                                                                        :        1 samples, Peak.   161 ms (1.0x), Avg.   161 ms, Total. 161.1 ms (0.3%)
+[Performance] Application.InitializeMenu                                                                                                                   :        1 samples, Peak.  3.41 s (1.0x), Avg.  3.41 s, Total. 3.406 s (5.9%)
+[Performance] Menu.RebuildAll                                                                                                                              :        1 samples, Peak.  3.41 s (1.0x), Avg.  3.41 s, Total. 3.406 s (5.9%)
+[Performance] Menu.BuildRegisteredMenuInterfaces                                                                                                           :        1 samples, Peak.  3.40 s (1.0x), Avg.  3.40 s, Total. 3.399 s (5.9%)
+[Performance] Menu.FilterMenuItem                                                                                                                          :      797 samples, Peak.  20.0 ms (784.0x), Avg.  25.5 us, Total. 20.34 ms (0.0%)
+[Performance] UpdateAllMenus                                                                                                                               :        1 samples, Peak.  1.55 ms (1.0x), Avg.  1.55 ms, Total. 1.547 ms (0.0%)
+[Performance] Menu.RebuildOSMainMenu                                                                                                                       :        3 samples, Peak.  4.85 ms (1.2x), Avg.  4.10 ms, Total. 12.30 ms (0.0%)
+[Performance] EditorSceneManager.sceneClosing: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnSceneClosing                                         :        2 samples, Peak.   556 us (2.0x), Avg.   282 us, Total. 563.7 us (0.0%)
+[Performance] GUIView.RepaintAll.PlayerLoopController                                                                                                      :        2 samples, Peak.   224 us (2.0x), Avg.   113 us, Total. 225.8 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneTemplate.SceneTemplateService.OnNewSceneCreated                                         :        1 samples, Peak.   232 us (1.0x), Avg.   232 us, Total. 232.5 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnNewSceneCreated                                   :        1 samples, Peak.   473 us (1.0x), Avg.   473 us, Total. 473.5 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneManagement.StageNavigationManager.OnNewSceneCreated                                     :        1 samples, Peak.  93.0 us (1.0x), Avg.  93.0 us, Total. 93.00 us (0.0%)
+[Performance] Application.InvokeFinishedLoadingProject                                                                                                     :        1 samples, Peak.  11.1 ms (1.0x), Avg.  11.1 ms, Total. 11.10 ms (0.0%)
+[Performance] ProcessService.OnProjectLoaded                                                                                                               :        1 samples, Peak.  55.1 us (1.0x), Avg.  55.1 us, Total. 55.10 us (0.0%)
+[Performance] Inspector.InitOrRebuild                                                                                                                      :        2 samples, Peak.   449 us (1.3x), Avg.   337 us, Total. 673.2 us (0.0%)
+[Performance] StateMacroSavedEvent.OnWillSaveAssets                                                                                                        :        2 samples, Peak.   596 us (1.9x), Avg.   311 us, Total. 621.6 us (0.0%)
+[Performance] FlowMacroSavedEvent.OnWillSaveAssets                                                                                                         :        2 samples, Peak.   188 us (2.0x), Avg.  95.4 us, Total. 190.7 us (0.0%)
+[Performance] AssetModificationProcessor.OnWillSaveAssets                                                                                                  :        2 samples, Peak.   280 us (2.0x), Avg.   141 us, Total. 281.0 us (0.0%)
+[Performance] UnityCloudProjectLinkMonitor.OnWillSaveAssets                                                                                                :        2 samples, Peak.   346 us (2.0x), Avg.   174 us, Total. 347.5 us (0.0%)
+[Performance] BuilderAssetModificationProcessor.OnWillSaveAssets                                                                                           :        2 samples, Peak.   381 us (2.0x), Avg.   191 us, Total. 382.7 us (0.0%)
+[Performance] TerrainModificationProcessor.OnWillSaveAssets                                                                                                :        2 samples, Peak.   640 us (2.0x), Avg.   321 us, Total. 641.1 us (0.0%)
+[Performance] GenerateAssemblyTypeInfos                                                                                                                    :        2 samples, Peak.  35.0 ms (1.2x), Avg.  29.9 ms, Total. 59.81 ms (0.1%)
+[Performance] EditorApplication.quitting: UnityEditor.SettingsManagement.FileSettingsRepository.Save                                                       :        1 samples, Peak.  1.49 ms (1.0x), Avg.  1.49 ms, Total. 1.487 ms (0.0%)
+[Performance] EditorApplication.quitting: callback in UnityEditor.TextCore.Text.EditorEventCallbacks                                                       :        1 samples, Peak.  78.0 ms (1.0x), Avg.  78.0 ms, Total. 78.01 ms (0.1%)
+[Performance] Killing ADB server                                                                                                                           :        1 samples, Peak.   127 ms (1.0x), Avg.   127 ms, Total. 127.0 ms (0.2%)
+[Performance] Application.Shutdown.PauseProfilerSession                                                                                                    :        1 samples, Peak.   830 us (1.0x), Avg.   830 us, Total. 829.5 us (0.0%)
+[Performance] Application.Shutdown.PauseAssetImportWorkers                                                                                                 :        1 samples, Peak.   249 us (1.0x), Avg.   249 us, Total. 248.9 us (0.0%)
+[Performance] Application.Shutdown.SaveAssets                                                                                                              :        1 samples, Peak.   218 ms (1.0x), Avg.   218 ms, Total. 218.4 ms (0.4%)
+[Performance] Application.Shutdown.CleanupRenderPipeline                                                                                                   :        1 samples, Peak.  2.90 us (1.0x), Avg.  2.90 us, Total. 2.900 us (0.0%)
+[Performance] Application.Shutdown.StopPreloadManager                                                                                                      :        1 samples, Peak.  9.91 ms (1.0x), Avg.  9.91 ms, Total. 9.910 ms (0.0%)
+[Performance] Application.Shutdown.DestroyWorld                                                                                                            :        1 samples, Peak.   855 us (1.0x), Avg.   855 us, Total. 855.1 us (0.0%)
+[Performance] Application.Shutdown.CleanupAfterLoad                                                                                                        :        1 samples, Peak.  14.6 ms (1.0x), Avg.  14.6 ms, Total. 14.63 ms (0.0%)
+[Performance] Application.Shutdown.Progress                                                                                                                :        1 samples, Peak.   434 us (1.0x), Avg.   434 us, Total. 433.6 us (0.0%)
+[Performance] Application.Shutdown.GICleanupManagers                                                                                                       :        1 samples, Peak.  5.36 ms (1.0x), Avg.  5.36 ms, Total. 5.363 ms (0.0%)
+[Performance] Application.Shutdown.MenuCleanupClass                                                                                                        :        1 samples, Peak.   269 us (1.0x), Avg.   269 us, Total. 268.5 us (0.0%)
+[Performance] Application.Shutdown.ADBSaveStateBeforeShutdown                                                                                              :        1 samples, Peak.  10.3 us (1.0x), Avg.  10.3 us, Total. 10.30 us (0.0%)
+[Performance] Application.Shutdown.RemoteShutdown                                                                                                          :        1 samples, Peak.  1.10 us (1.0x), Avg.  1.10 us, Total. 1.100 us (0.0%)
+[Performance] Application.Shutdown.CleanupVCProvider                                                                                                       :        1 samples, Peak.   233 us (1.0x), Avg.   233 us, Total. 233.4 us (0.0%)
+[Performance] Application.Shutdown.InputShutdown                                                                                                           :        1 samples, Peak.   201 us (1.0x), Avg.   201 us, Total. 200.9 us (0.0%)
+[Performance] Application.Shutdown.GizmoManagerDestroy                                                                                                     :        1 samples, Peak.   497 us (1.0x), Avg.   497 us, Total. 496.7 us (0.0%)
+[Performance] Application.Shutdown.ProfilerSession                                                                                                         :        1 samples, Peak.   724 us (1.0x), Avg.   724 us, Total. 724.5 us (0.0%)
+[Performance] Application.Shutdown.ReleaseGfxWindowOnAllGUIViews                                                                                           :        1 samples, Peak.   300 ns (1.0x), Avg.   300 ns, Total. 300.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupEngine                                                                                                           :        1 samples, Peak.   115 ms (1.0x), Avg.   115 ms, Total. 115.3 ms (0.2%)
+[Performance] Application.Shutdown.CleanupAssetDatabase                                                                                                    :        1 samples, Peak.  18.4 ms (1.0x), Avg.  18.4 ms, Total. 18.44 ms (0.0%)
+[Performance] Application.Shutdown.ScriptCompilationCleanUp                                                                                                :        1 samples, Peak.  14.0 ms (1.0x), Avg.  14.0 ms, Total. 13.95 ms (0.0%)
+[Performance] Application.Shutdown.DestroyJobSystem                                                                                                        :        1 samples, Peak.   161 us (1.0x), Avg.   161 us, Total. 161.1 us (0.0%)
+[Performance] Application.Shutdown.CleanupPersistentManager                                                                                                :        1 samples, Peak.   687 us (1.0x), Avg.   687 us, Total. 687.4 us (0.0%)
+[Performance] Application.Shutdown.CleanupAsyncReadManager                                                                                                 :        1 samples, Peak.   705 us (1.0x), Avg.   705 us, Total. 704.9 us (0.0%)
+[Performance] Application.Shutdown.CleanupProgressBar                                                                                                      :        1 samples, Peak.   600 ns (1.0x), Avg.   600 ns, Total. 600.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupMono                                                                                                             :        1 samples, Peak.   112 ms (1.0x), Avg.   112 ms, Total. 112.4 ms (0.2%)
+[Performance] Application.Shutdown.CleanupStdConverters                                                                                                    :        1 samples, Peak.  9.20 us (1.0x), Avg.  9.20 us, Total. 9.200 us (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportModuleNativeDlls                                                                                :        1 samples, Peak.   800 ns (1.0x), Avg.   800 ns, Total. 800.0 ns (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportNativeLibraries                                                                                 :        1 samples, Peak.  2.83 s (1.0x), Avg.  2.83 s, Total. 2.829 s (4.9%)
+[Performance] Application.Shutdown.CleanupAutoDocumentation                                                                                                :        1 samples, Peak.  1.89 ms (1.0x), Avg.  1.89 ms, Total. 1.888 ms (0.0%)
+[Performance] Application.Shutdown.ShaderNameManagerDestroy                                                                                                :        1 samples, Peak.   136 us (1.0x), Avg.   136 us, Total. 136.3 us (0.0%)
+[Performance] Application.Shutdown.CleanupCacheServer                                                                                                      :        1 samples, Peak.   600 ns (1.0x), Avg.   600 ns, Total. 600.0 ns (0.0%)
+[Performance] Application.Shutdown.Virtualization_Shutdown                                                                                                 :        1 samples, Peak.   800 ns (1.0x), Avg.   800 ns, Total. 800.0 ns (0.0%)
+[Performance] Application.Shutdown.DevConnections                                                                                                          :        1 samples, Peak.   240 us (1.0x), Avg.   240 us, Total. 239.8 us (0.0%)
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

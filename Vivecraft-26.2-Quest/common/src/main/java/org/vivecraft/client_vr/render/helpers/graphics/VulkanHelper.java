@@ -42,18 +42,11 @@ public class VulkanHelper implements GraphicsHelper {
 
     @Override
     public void copyToExternalImage(GpuTexture texture, long image, int width, int height) {
-        copyToExternalImage(texture, image, width, height, 0);
+        copyToExternalImage(texture, image, width, height, VK10.VK_FORMAT_UNDEFINED);
     }
 
-    /**
-     * Copies a Minecraft eye texture into an OpenXR-owned Vulkan image.
-     *
-     * On Quest, Minecraft's RGBA8_UNORM eye texture already contains the display-encoded color values we want the
-     * compositor to receive. A Vulkan blit into an RGBA8_SRGB swapchain performs an sRGB encode on write, which
-     * encodes those values a second time and washes out the image. Keep the runtime-compatible sRGB swapchain, but
-     * use a raw image copy for the matching RGBA layout so the texel bits are preserved without color conversion.
-     */
-    public void copyToExternalImage(GpuTexture texture, long image, int width, int height, long targetFormat) {
+    @Override
+    public void copyToExternalImage(GpuTexture texture, long image, int width, int height, long externalFormat) {
         VulkanGpuTexture source = getVulkanTexture(texture);
         VulkanDevice device = getVulkanDevice();
         VkCommandBuffer commandBuffer = device.createCommandEncoder().allocateAndBeginTransientCommandBuffer();
@@ -69,8 +62,8 @@ public class VulkanHelper implements GraphicsHelper {
             0, VK10.VK_ACCESS_TRANSFER_WRITE_BIT,
             VK10.VK_PIPELINE_STAGE_TOP_OF_PIPE_BIT, VK10.VK_PIPELINE_STAGE_TRANSFER_BIT);
 
-        if (isAndroidRuntime() && targetFormat == VK10.VK_FORMAT_R8G8B8A8_SRGB) {
-            copyTexture(commandBuffer, source.vkImage(), image, width, height);
+        if (externalFormat == VK10.VK_FORMAT_R8G8B8A8_SRGB) {
+            copyTextureRaw(commandBuffer, source.vkImage(), image, width, height);
         } else {
             blitTexture(commandBuffer,
                 source.vkImage(), 0, 0, 0, width, height,
@@ -93,35 +86,29 @@ public class VulkanHelper implements GraphicsHelper {
         device.createCommandEncoder().execute(commandBuffer);
     }
 
-    private static boolean isAndroidRuntime() {
-        return System.getProperty("os.version", "").contains("Android") ||
-            System.getProperty("java.runtime.name", "").contains("Android");
-    }
-
-    private void copyTexture(VkCommandBuffer commandBuffer, long sourceImage, long targetImage, int width, int height) {
+    private void copyTextureRaw(
+        VkCommandBuffer commandBuffer, long sourceImage, long targetImage, int width, int height)
+    {
         try (MemoryStack stack = MemoryStack.stackPush()) {
+            VkImageSubresourceLayers srcSubresource = VkImageSubresourceLayers.calloc(stack)
+                .aspectMask(VK10.VK_IMAGE_ASPECT_COLOR_BIT)
+                .mipLevel(0)
+                .baseArrayLayer(0)
+                .layerCount(1);
+            VkImageSubresourceLayers dstSubresource = VkImageSubresourceLayers.calloc(stack)
+                .aspectMask(VK10.VK_IMAGE_ASPECT_COLOR_BIT)
+                .mipLevel(0)
+                .baseArrayLayer(0)
+                .layerCount(1);
+
             VkImageCopy.Buffer copyRegion = VkImageCopy.calloc(1, stack);
+            copyRegion.srcSubresource(srcSubresource);
+            copyRegion.srcOffset().set(0, 0, 0);
+            copyRegion.dstSubresource(dstSubresource);
+            copyRegion.dstOffset().set(0, 0, 0);
+            copyRegion.extent().set(width, height, 1);
 
-            copyRegion.srcSubresource()
-                .aspectMask(VK10.VK_IMAGE_ASPECT_COLOR_BIT)
-                .mipLevel(0)
-                .baseArrayLayer(0)
-                .layerCount(1);
-            copyRegion.srcOffset().x(0).y(0).z(0);
-
-            copyRegion.dstSubresource()
-                .aspectMask(VK10.VK_IMAGE_ASPECT_COLOR_BIT)
-                .mipLevel(0)
-                .baseArrayLayer(0)
-                .layerCount(1);
-            copyRegion.dstOffset().x(0).y(0).z(0);
-
-            copyRegion.extent()
-                .width(width)
-                .height(height)
-                .depth(1);
-
-            VK10.vkCmdCopyImage(commandBuffer,
+            VK12.vkCmdCopyImage(commandBuffer,
                 sourceImage, VK10.VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL,
                 targetImage, VK10.VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL,
                 copyRegion);
