@@ -1,6 +1,6 @@
 # Welcome to the QuestCraft GitHub!
 
-### **[Support QuestCraft on Patreon](https://patreon.com/QuestCraftXR)**
+### **[Support QuestCraft on Patreon](https://patreon.com/MakhiBurroughs?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink)**
 
 # QuestCraft
 
