@@ -97,6 +97,15 @@ import java.util.Map;
 @Mixin(value = Minecraft.class, priority = 1100)
 public abstract class MinecraftVRMixin implements MinecraftExtension {
 
+    // On Quest/Android the GLFW window is a hidden dummy SurfaceView. The headset image is submitted
+    // through OpenXR instead, so maintaining the Android window swapchain while VR is running is
+    // unnecessary. Minecraft 26.2's Vulkan backend reconfigures that swapchain whenever Android reports
+    // VK_SUBOPTIMAL_KHR; on Quest this can turn into a rapid native/gralloc allocation loop.
+    @Unique
+    private static final boolean vivecraft$IS_ANDROID =
+        System.getProperty("os.version", "").contains("Android") ||
+            System.getProperty("java.runtime.name", "").contains("Android");
+
     // keeps track if an attack was initiated by pressing the attack key
     @Unique
     private boolean vivecraft$attackKeyDown;
@@ -366,7 +375,29 @@ public abstract class MinecraftVRMixin implements MinecraftExtension {
     {
         if (VRState.VR_RUNNING) {
             VRPassHelper.renderAndSubmit(renderLevel, this.deltaTracker);
+            if (vivecraft$IS_ANDROID) {
+                // The desktop mirror blit below normally restores this after rendering the VR passes.
+                // Quest intentionally skips that dummy-window blit, so restore it here instead.
+                RenderPassManager.setGUIRenderPass();
+            }
         }
+    }
+
+    @WrapOperation(method = "renderFrame", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/GpuSurface;isSuboptimal()Z"))
+    private boolean vivecraft$ignoreAndroidWindowSurfaceSuboptimalInVR(GpuSurface instance, Operation<Boolean> original) {
+        return VRState.VR_RUNNING && vivecraft$IS_ANDROID ? false : original.call(instance);
+    }
+
+    @WrapWithCondition(method = "renderFrame", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/GpuSurface;configure(Lcom/mojang/blaze3d/systems/GpuSurface$Configuration;)V"))
+    private boolean vivecraft$skipAndroidWindowSurfaceConfigureInVR(
+        GpuSurface instance, GpuSurface.Configuration configuration)
+    {
+        return !(VRState.VR_RUNNING && vivecraft$IS_ANDROID);
+    }
+
+    @WrapWithCondition(method = "renderFrame", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/GpuSurface;acquireNextTexture()V"))
+    private boolean vivecraft$skipAndroidWindowSurfaceAcquireInVR(GpuSurface instance) {
+        return !(VRState.VR_RUNNING && vivecraft$IS_ANDROID);
     }
 
     @WrapOperation(method = "renderFrame", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/GpuSurface;blitFromTexture(Lcom/mojang/blaze3d/systems/CommandEncoder;Lcom/mojang/blaze3d/textures/GpuTextureView;)V"))
@@ -374,11 +405,13 @@ public abstract class MinecraftVRMixin implements MinecraftExtension {
         GpuSurface instance, CommandEncoder commandEncoder, GpuTextureView textureView, Operation<Void> original)
     {
         if (VRState.VR_RUNNING) {
-            Profiler.get().popPush("vrMirror");
-            RenderPassManager.setMirrorRenderPass();
-            ShaderHelper.drawMirror();
-            GraphicsHelper.INSTANCE.checkError("post-mirror");
-            original.call(instance, commandEncoder, this.gameRenderer.mainRenderTarget.getColorTextureView());
+            if (!vivecraft$IS_ANDROID) {
+                Profiler.get().popPush("vrMirror");
+                RenderPassManager.setMirrorRenderPass();
+                ShaderHelper.drawMirror();
+                GraphicsHelper.INSTANCE.checkError("post-mirror");
+                original.call(instance, commandEncoder, this.gameRenderer.mainRenderTarget.getColorTextureView());
+            }
             RenderPassManager.setGUIRenderPass();
         } else {
             if (VRState.VR_ENABLED && !VRState.VR_INITIALIZED) {

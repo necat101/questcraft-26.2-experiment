@@ -58,7 +58,11 @@ public class VulkanHelper implements GraphicsHelper {
             VK10.VK_PIPELINE_STAGE_ALL_COMMANDS_BIT, VK10.VK_PIPELINE_STAGE_TRANSFER_BIT);
         transitionImageLayoutTo(commandBuffer, image,
             0, 1,
-            VK10.VK_IMAGE_LAYOUT_UNDEFINED, VK10.VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL,
+            // OpenXR guarantees an acquired Vulkan color swapchain image is in a
+            // layout compatible with COLOR_ATTACHMENT_OPTIMAL.  Treating the image
+            // as UNDEFINED every frame discards that runtime-provided state and can
+            // force mobile drivers to repeatedly rebuild image metadata.
+            VK10.VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL, VK10.VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL,
             0, VK10.VK_ACCESS_TRANSFER_WRITE_BIT,
             VK10.VK_PIPELINE_STAGE_TOP_OF_PIPE_BIT, VK10.VK_PIPELINE_STAGE_TRANSFER_BIT);
 

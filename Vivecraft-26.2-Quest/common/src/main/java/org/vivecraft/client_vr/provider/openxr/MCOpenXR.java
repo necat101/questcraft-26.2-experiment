@@ -75,7 +75,6 @@ public class MCOpenXR extends MCVR {
     private List<VRInputActionSet> activeActionSets = new ArrayList<>();
     private final Map<String, TrackpadSwipeSampler> trackpadSwipeSamplers = new HashMap<>();
     private final Map<Long, long[]> actionOrigins = new HashMap<>();
-    private final Map<Long, ControllerType> originControllerTypes = new HashMap<>();
     private boolean isActive;
     private boolean sessionRunning;
     private int sessionState = XR10.XR_SESSION_STATE_UNKNOWN;
@@ -670,7 +669,16 @@ public class MCOpenXR extends MCVR {
             return XR10.XR_NULL_PATH;
         }
 
-        int index = hand == null ? ControllerType.values().length : hand.ordinal();
+        // Handed action state is queried with an explicit OpenXR subaction path, so the
+        // controller is already known here. Do not round-trip opaque bound-source handles
+        // through xrPathToString every frame: Meta's runtime can return source handles that
+        // are not valid XrPath values, which caused thousands of XR_ERROR_PATH_INVALID
+        // messages on the render thread and substantial per-frame allocation/logging work.
+        if (hand != null) {
+            return this.getSubactionPath(hand);
+        }
+
+        int index = ControllerType.values().length;
         long[] cachedOrigins = this.actionOrigins.computeIfAbsent(
             action.handle, ignored -> new long[ControllerType.values().length + 1]);
         if (cachedOrigins[index] != XR10.XR_NULL_PATH) {
@@ -678,19 +686,10 @@ public class MCOpenXR extends MCVR {
         }
 
         for (long origin : this.getOrigins(action)) {
-            if (origin != XR10.XR_NULL_PATH &&
-                (hand == null || this.getOriginControllerType(origin) == hand))
-            {
+            if (origin != XR10.XR_NULL_PATH) {
                 cachedOrigins[index] = origin;
                 return origin;
             }
-        }
-
-        // Some Quest runtimes do not immediately enumerate the concrete component origin even
-        // though the handed action is already active. Preserve the queried hand so Vivecraft can
-        // still route trigger/menu actions to the correct controller on those first frames.
-        if (hand != null) {
-            cachedOrigins[index] = this.getSubactionPath(hand);
         }
         return cachedOrigins[index];
     }
@@ -773,7 +772,6 @@ public class MCOpenXR extends MCVR {
                 }
                 case XR10.XR_TYPE_EVENT_DATA_INTERACTION_PROFILE_CHANGED -> {
                     this.actionOrigins.clear();
-                    this.originControllerTypes.clear();
                 }
                 case XR10.XR_TYPE_EVENT_DATA_REFERENCE_SPACE_CHANGE_PENDING -> {
                 }
@@ -1253,18 +1251,29 @@ public class MCOpenXR extends MCVR {
             LongBuffer longbuf = stack.callocLong(size);
             error = XR10.xrEnumerateBoundSourcesForAction(this.session, info, buf, longbuf);
             logError(error, "xrEnumerateBoundSourcesForAction", action.name);
-            long[] array;
-            if (longbuf.hasArray()) { //TODO really?
-                array = longbuf.array();
-            } else {
-                longbuf.rewind();
-                array = new long[longbuf.remaining()];
-                int index = 0;
-                while (longbuf.hasRemaining()) {
-                    array[index++] = longbuf.get();
+            longbuf.rewind();
+            ArrayList<Long> origins = new ArrayList<>(longbuf.remaining() + ControllerType.values().length);
+            while (longbuf.hasRemaining()) {
+                origins.add(longbuf.get());
+            }
+
+            // For handed OpenXR actions, Vivecraft uses the queried hand as the stable
+            // activeOrigin. Include that same root path in the origin set while the hand is
+            // active so VRInputAction's priority arbitration still matches competing actions.
+            if (action.isHanded()) {
+                for (ControllerType hand : ControllerType.values()) {
+                    int index = hand.ordinal();
+                    boolean active = switch (action.type) {
+                        case "boolean" -> action.digitalData[index].isActive;
+                        case "vector1", "vector2", "vector3" -> action.analogData[index].isActive;
+                        default -> false;
+                    };
+                    if (active) {
+                        origins.add(this.getSubactionPath(hand));
+                    }
                 }
             }
-            return Arrays.stream(array).boxed().toList();
+            return origins;
         }
     }
 
@@ -1319,46 +1328,16 @@ public class MCOpenXR extends MCVR {
             return null;
         }
 
-        ControllerType cached = this.originControllerTypes.get(inputValueHandle);
-        if (cached != null) {
-            return cached;
+        // resolveActionOrigin() deliberately exposes only these stable root paths for
+        // handed actions. Comparing handles is constant-time and avoids asking OpenXR to
+        // stringify runtime-private bound-source values on every isEnabled() call.
+        if (inputValueHandle == this.getSubactionPath(ControllerType.RIGHT)) {
+            return ControllerType.RIGHT;
         }
-
-        String path = this.getPathString(inputValueHandle);
-        ControllerType type = null;
-        if (path.startsWith("/user/hand/right")) {
-            type = ControllerType.RIGHT;
-        } else if (path.startsWith("/user/hand/left")) {
-            type = ControllerType.LEFT;
+        if (inputValueHandle == this.getSubactionPath(ControllerType.LEFT)) {
+            return ControllerType.LEFT;
         }
-
-        if (type != null) {
-            this.originControllerTypes.put(inputValueHandle, type);
-        }
-        return type;
-    }
-
-    private String getPathString(long path) {
-        if (path == XR10.XR_NULL_PATH) {
-            return "";
-        }
-
-        try (MemoryStack stack = MemoryStack.stackPush()) {
-            IntBuffer count = stack.callocInt(1);
-            int error = XR10.xrPathToString(this.instance, path, count, null);
-            logError(error, "xrPathToString", "get string length for", Long.toString(path));
-            if (error < XR10.XR_SUCCESS || count.get(0) <= 1) {
-                return "";
-            }
-
-            ByteBuffer buffer = stack.calloc(count.get(0));
-            error = XR10.xrPathToString(this.instance, path, count, buffer);
-            logError(error, "xrPathToString", "get string for", Long.toString(path));
-            if (error < XR10.XR_SUCCESS) {
-                return "";
-            }
-            return MemoryUtil.memUTF8(MemoryUtil.memAddress(buffer));
-        }
+        return null;
     }
 
     @Override

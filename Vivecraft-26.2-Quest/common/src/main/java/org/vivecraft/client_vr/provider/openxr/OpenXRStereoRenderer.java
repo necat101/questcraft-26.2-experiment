@@ -150,22 +150,26 @@ public class OpenXRStereoRenderer extends VRRenderer {
                         this.openxr.height,
                         this.openxr.swapchainFormat);
                 }
+
+                // OpenXR requires the app to be done *submitting* commands that reference
+                // the image before release; it does not require a CPU-side wait for GPU
+                // completion. A fence wait here serialized every Quest frame and destroyed
+                // the normal CPU/GPU overlap. Submit the copies, then release the images.
                 GraphicsHelper.INSTANCE.flush();
 
-                for (int eye = 0; eye < 2; eye++) {
-                    int result = XR10.xrReleaseSwapchainImage(
-                        this.openxr.swapchain[eye],
-                        XrSwapchainImageReleaseInfo.calloc(stack)
-                            .type(XR10.XR_TYPE_SWAPCHAIN_IMAGE_RELEASE_INFO));
-                    requireSuccess(result, "xrReleaseSwapchainImage");
-                    this.imageAcquired[eye] = false;
-                }
+                this.releaseAcquiredSwapchainImages(stack);
 
                 XrCompositionLayerProjection projectionLayer = XrCompositionLayerProjection.calloc(stack)
                     .type(XR10.XR_TYPE_COMPOSITION_LAYER_PROJECTION)
                     .space(this.openxr.xrAppSpace)
                     .views(this.projectionLayerViews);
                 layers = stack.callocPointer(1).put(0, projectionLayer.address());
+            } else {
+                // shouldRender can change after setupRenderConfiguration() acquired the
+                // two eye images (for example while the runtime changes visibility/focus
+                // state). Never drop our bookkeeping without returning those images to
+                // OpenXR; doing so can strand runtime-owned Vulkan/gralloc resources.
+                this.releaseAcquiredSwapchainImages(stack);
             }
 
             int result = XR10.xrEndFrame(
@@ -178,8 +182,21 @@ public class OpenXRStereoRenderer extends VRRenderer {
             requireSuccess(result, "xrEndFrame");
         } finally {
             this.openxr.frameBegun = false;
-            this.imageAcquired[0] = false;
-            this.imageAcquired[1] = false;
+        }
+    }
+
+    private void releaseAcquiredSwapchainImages(MemoryStack stack) throws RenderConfigException {
+        for (int eye = 0; eye < 2; eye++) {
+            if (!this.imageAcquired[eye]) {
+                continue;
+            }
+
+            int result = XR10.xrReleaseSwapchainImage(
+                this.openxr.swapchain[eye],
+                XrSwapchainImageReleaseInfo.calloc(stack)
+                    .type(XR10.XR_TYPE_SWAPCHAIN_IMAGE_RELEASE_INFO));
+            requireSuccess(result, "xrReleaseSwapchainImage");
+            this.imageAcquired[eye] = false;
         }
     }
 
