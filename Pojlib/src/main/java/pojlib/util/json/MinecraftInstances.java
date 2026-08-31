@@ -236,7 +236,14 @@ public class MinecraftInstances {
                             gameDir + (newMod.type.equals("mod") ? "/mods" : "/resourcepacks"),
                             (legacyMod ? newMod.slug : newMod.fileName) + (newMod.type.equals("resourcepack") ? ".zip" : ".jar")
                     );
-                    if(!mod.exists() || !extMod.version.equals(newMod.version)) {
+                    // Bundled projects are part of the APK itself. During local QuestCraft
+                    // development their bytes can change without the public mod version
+                    // changing, so a version-only check leaves the previously extracted JAR
+                    // in Android app storage forever. Always refresh asset:// projects from
+                    // the currently installed APK; remote projects keep the normal version
+                    // check so they are not downloaded unnecessarily.
+                    boolean bundledProject = newMod.download_link.startsWith("asset://");
+                    if(bundledProject || !mod.exists() || !extMod.version.equals(newMod.version)) {
                         installProject(ctx, newMod, mod, false);
                         extMod = newMod;
                         break;

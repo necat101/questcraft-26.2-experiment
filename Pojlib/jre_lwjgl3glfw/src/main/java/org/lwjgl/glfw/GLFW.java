@@ -1073,13 +1073,14 @@ public class GLFW
         int glMajor = 3;
         int glMinor = 3;
         // Custom defaults for specific renderers
-        if (System.getenv("POJAV_RENDERER").equals("vulkan_zink")) {
+        String pojavRenderer = System.getenv("POJAV_RENDERER");
+        if ("vulkan_zink".equals(pojavRenderer)) {
             glMajor = 4;
             glMinor = 6;
-        } else if (System.getenv("POJAV_RENDERER").equals("gallium_virgl")) {
+        } else if ("gallium_virgl".equals(pojavRenderer)) {
             glMajor = 4;
             glMinor = 3;
-        } else if (System.getenv("POJAV_RENDERER").equals("opengles3")) {
+        } else if ("opengles3".equals(pojavRenderer)) {
             glMajor = 4;
             glMinor = 0;
         }

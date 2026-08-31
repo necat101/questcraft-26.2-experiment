@@ -56,15 +56,132 @@ static pthread_mutex_t minecraftWindowMutex = PTHREAD_MUTEX_INITIALIZER;
 static void* vulkanDriverHandle;
 static int vulkanFpsCounter;
 
-JNIEXPORT jlong JNICALL
-Java_org_lwjgl_vulkan_VK_getVulkanDriverHandle(JNIEnv* env, jclass clazz) {
+typedef void (*PojavVkVoidFunction)(void);
+typedef PojavVkVoidFunction (*PojavVkGetInstanceProcAddr)(void* instance, const char* name);
+static PojavVkGetInstanceProcAddr vulkanGetInstanceProcAddr;
+
+typedef void (*FCLInjectorCallback)(void);
+static FCLInjectorCallback fclInjectorCallback;
+
+#define POJAV_EXPORTED __attribute__((visibility("default"), used))
+
+/*
+ * The FoldCraft GLFW shim resolves these two entry points while GLFW is being
+ * initialized, even when QuestCraft does not configure an FCL injector. Keep
+ * the callback for ABI compatibility; QuestCraft has no FCL bridge that needs
+ * to invoke it.
+ */
+POJAV_EXPORTED FCLInjectorCallback pojavSetInjectorCallback(FCLInjectorCallback callback) {
+    FCLInjectorCallback previous = fclInjectorCallback;
+    fclInjectorCallback = callback;
+    return previous;
+}
+
+POJAV_EXPORTED void pojavSetHitResultType(int type) {
+    (void) type;
+}
+
+static void* getVulkanDriverHandle(void) {
     if (vulkanDriverHandle == NULL) {
         vulkanDriverHandle = dlopen("/system/lib64/libvulkan.so", RTLD_NOW | RTLD_LOCAL);
         if (vulkanDriverHandle == NULL) {
             vulkanDriverHandle = dlopen("libvulkan.so", RTLD_NOW | RTLD_LOCAL);
         }
     }
-    return (jlong) (uintptr_t) vulkanDriverHandle;
+    return vulkanDriverHandle;
+}
+
+static PojavVkGetInstanceProcAddr getVulkanInstanceProcAddr(void) {
+    if (vulkanGetInstanceProcAddr == NULL) {
+        void* driver = getVulkanDriverHandle();
+        if (driver != NULL) {
+            vulkanGetInstanceProcAddr = (PojavVkGetInstanceProcAddr)
+                    dlsym(driver, "vkGetInstanceProcAddr");
+        }
+    }
+    return vulkanGetInstanceProcAddr;
+}
+
+/*
+ * The bundled GLFWVulkan implementation performs these operations in Java,
+ * while FoldCraft/FCL-compatible LWJGL variants may resolve the equivalent
+ * Pojav entry points from libpojavexec. Export the Android Vulkan ABI here so
+ * either path can initialize against the same native library.
+ */
+POJAV_EXPORTED void pojavInitVulkanLoader(PojavVkGetInstanceProcAddr loader) {
+    if (loader != NULL) {
+        vulkanGetInstanceProcAddr = loader;
+    }
+}
+
+POJAV_EXPORTED int pojavVulkanSupported(void) {
+    return getVulkanInstanceProcAddr() != NULL;
+}
+
+POJAV_EXPORTED const char** pojavGetRequiredInstanceExtensions(uint32_t* count) {
+    static const char* extensions[] = {
+            "VK_KHR_surface",
+            "VK_KHR_android_surface"
+    };
+    if (count != NULL) {
+        *count = sizeof(extensions) / sizeof(extensions[0]);
+    }
+    return extensions;
+}
+
+POJAV_EXPORTED PojavVkVoidFunction pojavGetInstanceProcAddress(
+        void* instance, const char* name) {
+    PojavVkGetInstanceProcAddr loader = getVulkanInstanceProcAddr();
+    return loader == NULL || name == NULL ? NULL : loader(instance, name);
+}
+
+POJAV_EXPORTED int pojavGetPhysicalDevicePresentationSupport(
+        void* instance, void* device, uint32_t queueFamily) {
+    (void) instance;
+    (void) device;
+    (void) queueFamily;
+    /* Android presentation support is established by creating the surface. */
+    return 1;
+}
+
+typedef struct PojavVkAndroidSurfaceCreateInfo {
+    int32_t sType;
+    const void* pNext;
+    uint32_t flags;
+    ANativeWindow* window;
+} PojavVkAndroidSurfaceCreateInfo;
+
+typedef int32_t (*PojavVkCreateAndroidSurface)(
+        void* instance,
+        const PojavVkAndroidSurfaceCreateInfo* createInfo,
+        const void* allocator,
+        uint64_t* surface);
+
+POJAV_EXPORTED int32_t pojavCreateWindowSurface(
+        void* instance, void* window, const void* allocator, uint64_t* surface) {
+    const int32_t VK_ERROR_INITIALIZATION_FAILED = -3;
+    const int32_t VK_ERROR_EXTENSION_NOT_PRESENT = -7;
+    PojavVkCreateAndroidSurface createSurface = (PojavVkCreateAndroidSurface)
+            pojavGetInstanceProcAddress(instance, "vkCreateAndroidSurfaceKHR");
+    if (createSurface == NULL) {
+        return VK_ERROR_EXTENSION_NOT_PRESENT;
+    }
+    if (window == NULL || surface == NULL) {
+        return VK_ERROR_INITIALIZATION_FAILED;
+    }
+
+    PojavVkAndroidSurfaceCreateInfo createInfo = {
+            .sType = 1000008000, /* VK_STRUCTURE_TYPE_ANDROID_SURFACE_CREATE_INFO_KHR */
+            .pNext = NULL,
+            .flags = 0,
+            .window = (ANativeWindow*) window
+    };
+    return createSurface(instance, &createInfo, allocator, surface);
+}
+
+JNIEXPORT jlong JNICALL
+Java_org_lwjgl_vulkan_VK_getVulkanDriverHandle(JNIEnv* env, jclass clazz) {
+    return (jlong) (uintptr_t) getVulkanDriverHandle();
 }
 
 JNIEXPORT jlong JNICALL
